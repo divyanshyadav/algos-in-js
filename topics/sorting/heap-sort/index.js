@@ -1,3 +1,8 @@
+/*
+    Heap Sort
+    nlogn | in-place sorting algorithm
+*/
+
 const { swap } = require('../../utils')
 
 const minHeapComparator = (a, b) => (a - b)
