@@ -27,7 +27,7 @@ const getLargerAndSmallerMap = (first, second) => {
 }
 
 
-const calculate = (first, second) => {
+const findDiff = (first, second) => {
     const { larger, smaller } = getLargerAndSmallerMap(
                                     getCharCountsMap(first), 
                                     getCharCountsMap(second)
@@ -39,4 +39,4 @@ const calculate = (first, second) => {
     return diff
 }
 
-module.exports = calculate
+module.exports = findDiff
