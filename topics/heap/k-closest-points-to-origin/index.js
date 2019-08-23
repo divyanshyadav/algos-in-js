@@ -5,7 +5,7 @@ const kthClosestPointFromOrigin = (points, k) => {
         return Math.sqrt(x*x + y*y)
     }
 
-    points.sort((p1, p2) => (distance(p1) - distance(p2)))
+    points.sort((p1, p2) => distance(p1) - distance(p2))
 
     return points.slice(0, k)
 }
