@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
-  "author": "",
+  "author": "dy",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",

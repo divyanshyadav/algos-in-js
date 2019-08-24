@@ -49,3 +49,20 @@ test('invalid BST', () => {
 
     expect(isBST(root)).toEqual(false)
 })
+
+test('invalid BST', () => {
+    /* 
+        50
+    10      40
+    */
+
+    const root = new Node(50)
+    const node2 = new Node(10)
+    const node3 = new Node(40)
+
+    root.left = node2
+    root.right = node3
+
+
+    expect(isBST(root)).toEqual(false)
+})
