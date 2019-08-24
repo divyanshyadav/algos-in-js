@@ -8,6 +8,7 @@ const hasCycle = (head) => {
         if (fast.next.next === null) {
             break
         }
+
         fast = fast.next.next
 
         if (slow === fast) {

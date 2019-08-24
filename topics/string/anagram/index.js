@@ -5,7 +5,7 @@
         if they have same characters(In any order).
 */
 
-const getCharCountsMap = (string) => {
+const getCharCountMap = (string) => {
     const map = new Map()
 
     string.split('').forEach(c => {
@@ -29,12 +29,23 @@ const getLargerAndSmallerMap = (first, second) => {
 
 const findDiff = (first, second) => {
     const { larger, smaller } = getLargerAndSmallerMap(
-                                    getCharCountsMap(first), 
-                                    getCharCountsMap(second)
+                                    getCharCountMap(first), 
+                                    getCharCountMap(second)
                                 )
 
     let diff = 0
-    larger.forEach((value, key) => diff += Math.abs(value - (smaller.get(key) || 0)))
+    larger.forEach((value, key) => {
+        if (smaller.get(key)) {
+            diff += Math.abs(value - smaller.get(key))
+            smaller.set(key, 0)
+        } else {
+            diff += value
+        }
+    })
+
+    smaller.forEach((value) => {
+        diff += value
+    })
 
     return diff
 }

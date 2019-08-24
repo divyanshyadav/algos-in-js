@@ -34,3 +34,18 @@ test('test case 5', () => {
 
     expect(findDiff(first, second)).toEqual(3)
 })
+
+test('test case 6', () => {
+    const first  = 'abcd'
+    const second = 'abcef'
+
+    expect(findDiff(first, second)).toEqual(3)
+})
+
+
+test('test case 7', () => {
+    const first  = 'abcdefgh'
+    const second = 'abc12345'
+
+    expect(findDiff(first, second)).toEqual(10)
+})
