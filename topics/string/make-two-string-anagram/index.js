@@ -30,8 +30,7 @@ const getLargerAndSmallerMap = (first, second) => {
 const findDiff = (first, second) => {
     const { larger, smaller } = getLargerAndSmallerMap(
                                     getCharCountMap(first), 
-                                    getCharCountMap(second)
-                                )
+                                    getCharCountMap(second))
 
     let diff = 0
     larger.forEach((value, key) => {
