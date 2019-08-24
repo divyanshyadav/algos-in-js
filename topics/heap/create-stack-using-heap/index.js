@@ -21,6 +21,14 @@ class HeapStack {
         const data = this.heap.peek()
         return data && data[1]
     }
+
+    size() {
+        return this.heap.length
+    }
+
+    isEmpty() {
+        return this.heap.length === 0
+    }
 }
 
 module.exports = HeapStack
