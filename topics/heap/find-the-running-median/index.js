@@ -2,6 +2,9 @@
     Mean = average
     Median = middle element in a sorted array
     Mode = most common number
+
+    Time complexity : O(nlogn)
+    Space complexity: O(n)
 */
 
 const { Heap } = require('data-structures-again')
