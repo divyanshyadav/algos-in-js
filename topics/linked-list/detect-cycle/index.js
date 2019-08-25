@@ -4,7 +4,7 @@ const hasCycle = (head) => {
 
     while (slow !== null && fast !== null) {
         slow = slow.next
-        
+
         if (fast.next.next === null) {
             break
         }

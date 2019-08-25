@@ -29,7 +29,6 @@ const createQueue = () => {
         peek: () => {
             moveStacks()
             return frontStack.peek()
-
         },
 
         dequeue: () => {

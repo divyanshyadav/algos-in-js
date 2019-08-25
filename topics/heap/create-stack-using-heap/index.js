@@ -1,32 +1,32 @@
 const { Heap } = require('data-structures-again')
 
 class HeapStack {
-    constructor() {
+    constructor () {
         this.heap = new Heap((a, b) => {
             return b[0] - a[0]
         })
         this.counter = 0
     }
 
-    push(data) {
+    push (data) {
         this.heap.push([this.counter++, data])
     }
 
-    pop() {
+    pop () {
         const data = this.heap.pop()
         return data && data[1]
     }
 
-    peek() {
+    peek () {
         const data = this.heap.peek()
         return data && data[1]
     }
 
-    size() {
+    size () {
         return this.heap.length
     }
 
-    isEmpty() {
+    isEmpty () {
         return this.heap.length === 0
     }
 }

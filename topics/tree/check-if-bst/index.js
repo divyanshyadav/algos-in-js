@@ -17,13 +17,12 @@ const isBST = (root) => {
         if (root.data > max) {
             return false
         }
-        
+
         return helper(root.left, min, root.data) &&
             helper(root.right, root.data, max)
     }
 
     return helper(root, -Infinity, +Infinity)
 }
-
 
 module.exports = isBST

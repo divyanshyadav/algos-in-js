@@ -2,7 +2,7 @@ const isBST = require('.')
 const { BST } = require('data-structures-again')
 
 class Node {
-    constructor(data) {
+    constructor (data) {
         this.left = null
         this.data = data
         this.right = null
@@ -10,7 +10,7 @@ class Node {
 }
 
 test('valid BST', () => {
-    /* 
+    /*
         50
     10      100
         20      200
@@ -27,7 +27,7 @@ test('valid BST', () => {
 })
 
 test('invalid BST', () => {
-    /* 
+    /*
         50
     10      100
       300      200
@@ -46,12 +46,11 @@ test('invalid BST', () => {
 
     node3.right = node5
 
-
     expect(isBST(root)).toEqual(false)
 })
 
 test('invalid BST', () => {
-    /* 
+    /*
         50
     10      40
     */
@@ -62,7 +61,6 @@ test('invalid BST', () => {
 
     root.left = node2
     root.right = node3
-
 
     expect(isBST(root)).toEqual(false)
 })

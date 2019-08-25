@@ -6,7 +6,6 @@ test('3-way partitioning algo', () => {
         .toEqual({ gt: 3, lt: 2 })
 })
 
-
 test('3-way partitioning quick sort', () => {
     const array = [2, 1, 2, 3, 1, 3, 5, 5]
     expect(sort(array))

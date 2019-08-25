@@ -4,7 +4,7 @@ test('push and pop operation', () => {
     const stack = new HeapStack()
     expect(stack.pop()).toEqual(undefined)
     stack.push(1)
-    
+
     expect(stack.pop()).toEqual(1)
 
     stack.push(1)

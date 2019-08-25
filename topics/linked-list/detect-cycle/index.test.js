@@ -1,14 +1,14 @@
 const hasCycle = require('.')
 
 class Node {
-    constructor(data) {
+    constructor (data) {
         this.data = data
         this.next = null
     }
 }
 
 test('with cycle', () => {
-    /* 
+    /*
         1 -> 2 -> 3 -> 4
                   |    |
                   6 <- 5
@@ -29,11 +29,10 @@ test('with cycle', () => {
     node6.next = node3
 
     expect(hasCycle(node1)).toEqual(true)
-
 })
 
 test('without cycle', () => {
-    /* 
+    /*
         1 -> 2 -> 3 -> 4 -> 5 -> 6
     */
 
@@ -51,5 +50,4 @@ test('without cycle', () => {
     node5.next = node6
 
     expect(hasCycle(node1)).toEqual(false)
-
 })

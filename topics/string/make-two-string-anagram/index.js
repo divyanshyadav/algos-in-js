@@ -1,7 +1,7 @@
 /*
     How many characters to be removed to make two string anagram.
-    
-    Anagram: Two strings are said to be anagram 
+
+    Anagram: Two strings are said to be anagram
         if they have same characters(In any order).
 */
 
@@ -22,15 +22,14 @@ const getCharCountMap = (string) => {
 const getLargerAndSmallerMap = (first, second) => {
     const larger = first.size > second.size ? first : second
     const smaller = first.size > second.size ? second : first
-    
+
     return { smaller, larger }
 }
 
-
 const findDiff = (first, second) => {
     const { larger, smaller } = getLargerAndSmallerMap(
-                                    getCharCountMap(first), 
-                                    getCharCountMap(second))
+        getCharCountMap(first),
+        getCharCountMap(second))
 
     let diff = 0
     larger.forEach((value, key) => {

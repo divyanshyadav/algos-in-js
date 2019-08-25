@@ -8,7 +8,6 @@ const { swap } = require('../../utils')
 const minHeapComparator = (a, b) => (a - b)
 const maxHeapComparator = (a, b) => (b - a)
 
-
 const sort = (array, comparator = maxHeapComparator) => {
     heapify(array, comparator)
     let index = array.length - 1
@@ -31,12 +30,12 @@ const heapify = (array, comparator = minHeapComparator) => {
 
 const sinkDown = (array, index, comparator = minHeapComparator, length = array.length) => {
     let current = index
-    while ( current < length ) {
+    while (current < length) {
         let leftChild = getLeftChildIndex(current)
         let rightChild = getRightChildIndex(current)
         if (leftChild >= length) leftChild = undefined
-        if (rightChild >= length) rightChild = undefined 
-        
+        if (rightChild >= length) rightChild = undefined
+
         let smallestChildIndex = leftChild
 
         if (comparator(array[smallestChildIndex], array[rightChild]) > 0) {

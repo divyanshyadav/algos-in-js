@@ -10,7 +10,7 @@ const select = (array, index) => {
 
     while (low < high) {
         const j = partition(array, low, high)
-        
+
         if (index < j) {
             high = j - 1
         } else if (index > j) {

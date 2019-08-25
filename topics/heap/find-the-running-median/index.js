@@ -1,4 +1,4 @@
-/* 
+/*
     Mean = average
     Median = middle element in a sorted array
     Mode = most common number
@@ -16,7 +16,7 @@ const findMedians = (array) => {
     const getBiggerAndSmallerHeap = () => {
         const bigger = firstHalf.length > secondHalf.length ? firstHalf : secondHalf
         const smaller = firstHalf.length > secondHalf.length ? secondHalf : firstHalf
-        
+
         return {
             bigger,
             smaller
@@ -33,10 +33,10 @@ const findMedians = (array) => {
 
     const reBalance = () => {
         const { bigger, smaller } = getBiggerAndSmallerHeap()
- 
-         if (bigger.length - smaller.length >= 2) {
-             smaller.push(bigger.pop())
-         }
+
+        if (bigger.length - smaller.length >= 2) {
+            smaller.push(bigger.pop())
+        }
     }
 
     const getMedian = () => {
@@ -45,7 +45,7 @@ const findMedians = (array) => {
         if (bigger.length === smaller.length) {
             return (bigger.peek() + smaller.peek()) / 2
         }
-        
+
         return bigger.peek()
     }
 
@@ -56,7 +56,6 @@ const findMedians = (array) => {
     })
 
     return medians
-
 }
 
 module.exports = findMedians

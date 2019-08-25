@@ -5,7 +5,7 @@ const partition = (array, low, high) => {
     let lt = low
     let i = low
     let gt = high
-    let v = array[low]
+    const v = array[low]
 
     while (i <= gt) {
         if (array[i] < v) {
@@ -28,8 +28,7 @@ const sort = (array) => {
     shuffle(array)
 
     const quickSort = (array, low, high) => {
-        if (low >= high) 
-            return
+        if (low >= high) { return }
 
         const { lt, gt } = partition(array, low, high)
         quickSort(array, low, lt - 1)
@@ -39,7 +38,6 @@ const sort = (array) => {
     quickSort(array, 0, array.length - 1)
     return array
 }
-
 
 module.exports = {
     partition,

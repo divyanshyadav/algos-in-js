@@ -1,14 +1,14 @@
 const createQueue = require('.')
 
 test('empty queue', () => {
-    const queue =  createQueue()
+    const queue = createQueue()
     expect(queue.peek()).toEqual(undefined)
     expect(queue.dequeue()).toEqual(undefined)
     expect(queue.dequeue()).toEqual(undefined)
 })
 
 test('enqueue and peek operations', () => {
-    const queue =  createQueue()
+    const queue = createQueue()
     queue.enqueue(1)
     queue.enqueue(2)
 
@@ -16,7 +16,7 @@ test('enqueue and peek operations', () => {
 })
 
 test('dequeue operation', () => {
-    const queue =  createQueue()
+    const queue = createQueue()
     queue.enqueue(1)
     queue.enqueue(2)
     queue.enqueue(3)
@@ -28,7 +28,7 @@ test('dequeue operation', () => {
 })
 
 test('custom test 1', () => {
-    const queue =  createQueue()
+    const queue = createQueue()
     queue.enqueue(1)
     queue.enqueue(2)
     queue.enqueue(3)

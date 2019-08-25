@@ -29,22 +29,21 @@ test('test case 4', () => {
 })
 
 test('test case 5', () => {
-    const first  = 'abc&&*('
+    const first = 'abc&&*('
     const second = 'abc&'
 
     expect(findDiff(first, second)).toEqual(3)
 })
 
 test('test case 6', () => {
-    const first  = 'abcd'
+    const first = 'abcd'
     const second = 'abcef'
 
     expect(findDiff(first, second)).toEqual(3)
 })
 
-
 test('test case 7', () => {
-    const first  = 'abcdefgh'
+    const first = 'abcdefgh'
     const second = 'abc12345'
 
     expect(findDiff(first, second)).toEqual(10)

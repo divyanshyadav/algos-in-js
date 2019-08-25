@@ -6,14 +6,16 @@ const TOKENS = [
     ['[', ']']
 ]
 
-const isOpenTerm = (exp) => TOKENS.find(t => t[0] === exp)
+const isOpenTerm = (exp) =>
+    TOKENS.find(t => t[0] === exp)
 
-const match = (start, end) => TOKENS.find(t => t[0] === start && t[1] === end)
+const match = (start, end) =>
+    TOKENS.find(t => t[0] === start && t[1] === end)
 
 const isBalanced = (expression) => {
     const stack = new Stack()
-    
-    for (c of expression.split('')) {
+
+    for (const c of expression.split('')) {
         if (isOpenTerm(c)) {
             stack.push(c)
         } else {
@@ -27,4 +29,3 @@ const isBalanced = (expression) => {
 }
 
 module.exports = isBalanced
-
