@@ -20,7 +20,7 @@ test('quick sort', () => {
     expect(sort(array)).toEqual([1, 2, 3, 4, 5])
 })
 
-test('quick sort with dublicates', () => {
+test('quick sort with duplicates', () => {
     const array = [2, 2, 2, 1]
     expect(sort(array)).toEqual([1, 2, 2, 2])
 })
