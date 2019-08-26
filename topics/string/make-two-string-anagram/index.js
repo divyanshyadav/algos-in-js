@@ -5,43 +5,43 @@
         if they have same characters(In any order).
 */
 
-const getCharCountMap = (string) => {
+const getCharFrequency = (word) => {
     const map = new Map()
 
-    string.split('').forEach(c => {
-        if (map.has(c)) {
-            map.set(c, map.get(c) + 1)
-        } else {
-            map.set(c, 1)
+    word.split('').forEach(c => {
+        if (!map.has(c)) {
+            map.set(c, 0)
         }
+        map.set(c, map.get(c) + 1)
     })
 
     return map
 }
 
-const getLargerAndSmallerMap = (first, second) => {
-    const larger = first.size > second.size ? first : second
-    const smaller = first.size > second.size ? second : first
+const getMaxAndMinMap = (first, second) => {
+    const max = first.size > second.size ? first : second
+    const min = first.size > second.size ? second : first
 
-    return { smaller, larger }
+    return { max, min }
 }
 
 const findDiff = (first, second) => {
-    const { larger, smaller } = getLargerAndSmallerMap(
-        getCharCountMap(first),
-        getCharCountMap(second))
+    const { max, min } = getMaxAndMinMap(
+        getCharFrequency(first),
+        getCharFrequency(second))
 
     let diff = 0
-    larger.forEach((value, key) => {
-        if (smaller.get(key)) {
-            diff += Math.abs(value - smaller.get(key))
-            smaller.set(key, 0)
+    max.forEach((value, key) => {
+        if (min.get(key)) {
+            diff += Math.abs(value - min.get(key))
+            min.set(key, 0)
         } else {
             diff += value
         }
     })
 
-    smaller.forEach((value) => {
+    // Add remaining values
+    min.forEach((value) => {
         diff += value
     })
 
