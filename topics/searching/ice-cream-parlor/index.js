@@ -21,17 +21,24 @@ const binarySearch = (array, price, start, end) => {
 }
 
 const findIceCreams = (menu, money) => {
-    const sortedMenu = menu.map((price, index) => { return { index, price } })
+    const sortedMenu = menu.map((price, index) => ({ index, price }))
 
     sortedMenu.sort((a, b) => a.price - b.price)
 
     let indices
     sortedMenu.find((item, index) => {
-        const found = binarySearch(sortedMenu, money - item.price, index + 1, sortedMenu.length - 1)
+        const found = binarySearch(sortedMenu,
+            money - item.price,
+            index + 1,
+            sortedMenu.length - 1)
+
         if (found) {
-            indices = [Math.min(item.index, found.index), Math.max(item.index, found.index)]
+            indices = [Math.min(item.index, found.index),
+                Math.max(item.index, found.index)]
+
             return true
         }
+
         return false
     })
 
