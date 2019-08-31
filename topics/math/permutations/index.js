@@ -1,25 +1,47 @@
-const { Queue } = require('data-structures-again')
+/*
+    Time complexity: O(n!)
+    Space Complexity; O(n!)
+
+    Note: Duplicated are handled.
+*/
+
 const { swap, clone } = require('../../utils')
 
 const permutations = (array) => {
-    const queue = new Queue()
+    if (!Array.isArray(array) || array.length === 0) {
+        return undefined
+    }
+
+    const map = new Map()
+
+    const add = (array) => {
+        const value = clone(array)
+        const key = value.join()
+
+        if (!map.has(key)) {
+            map.set(key, value)
+        }
+    }
 
     const helper = (array, start) => {
         if (start >= array.length) {
-            queue.enqueue(clone(array))
+            add(array)
             return
         }
 
         for (let i = start; i < array.length; i++) {
-            swap(array, i, start)
+            swap(array, start, i)
             helper(array, start + 1)
-            swap(array, i, start)
+            swap(array, start, i)
         }
     }
 
     helper(array, 0)
 
-    return queue.values()
+    const list = []
+    map.forEach(value => list.push(value))
+
+    return list
 }
 
 module.exports = permutations

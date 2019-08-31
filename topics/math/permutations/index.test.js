@@ -1,5 +1,26 @@
 const permutations = require('.')
 
+test('null input', () => {
+    const input = null
+    const solution = undefined
+
+    expect(permutations(input)).toEqual(solution)
+})
+
+test('empty array input', () => {
+    const input = []
+    const solution = undefined
+
+    expect(permutations(input)).toEqual(solution)
+})
+
+test('invalid input', () => {
+    const input = 'asd'
+    const solution = undefined
+
+    expect(permutations(input)).toEqual(solution)
+})
+
 test('permutations of a ', () => {
     const input = ['a']
 
@@ -33,5 +54,11 @@ test('permutations of abc ', () => {
         ['c', 'a', 'b']
     ]
 
+    expect(permutations(input)).toEqual(solution)
+})
+
+test('permutations of aa (duplicates)', () => {
+    const input = ['a', 'a']
+    const solution = [['a', 'a']]
     expect(permutations(input)).toEqual(solution)
 })

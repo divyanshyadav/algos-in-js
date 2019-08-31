@@ -1,7 +1,13 @@
-const { Stack, Queue } = require('data-structures-again')
+/*
+    Time complexity: O(n)
+    Space complexity: O(n)
+*/
 
-const inOrder = (node) => {
-    const queue = new Queue()
+const { Stack } = require('data-structures-again')
+
+const print = value => console.log(value)
+
+const inOrder = (node, visit = print) => {
     const stack = new Stack()
     let current = node
 
@@ -11,14 +17,12 @@ const inOrder = (node) => {
             current = current.left
         } else if (!stack.empty()) {
             current = stack.pop()
-            queue.enqueue(current.data)
+            visit(current.data)
             current = current.right
         } else {
             break
         }
     }
-
-    return queue.values()
 }
 
 module.exports = inOrder
