@@ -1,18 +1,26 @@
+/*
+    Serialize/deserialize
+        Time Complexity: O(n)
+        Space Complexity: O(logn)
+*/
+
+const { Queue } = require('data-structures-again')
+
+const NULL = 'X'
+const DELIMITER = ','
+
 const createTreeNode = (data, left = null, right = null) => {
-    return {
-        data,
-        left,
-        right
-    }
+    return { data, left, right }
 }
 
 const serialize = (node) => {
     const helper = (node) => {
         if (!node) {
-            return 'X,'
+            return NULL + DELIMITER
         }
 
-        return node.data + ',' +
+        return node.data +
+            DELIMITER +
             helper(node.left) +
             helper(node.right)
     }
@@ -26,9 +34,9 @@ const deserialize = (string) => {
             return null
         }
 
-        const node = nodes.shift()
+        const node = nodes.dequeue()
 
-        if (node === 'X') {
+        if (node === NULL) {
             return null
         }
 
@@ -38,7 +46,8 @@ const deserialize = (string) => {
         return createTreeNode(node, leftSubTree, rightSubTree)
     }
 
-    return helper(string.split(','))
+    const nodes = new Queue(...string.split(DELIMITER))
+    return helper(nodes)
 }
 
 module.exports = {

@@ -7,7 +7,8 @@
     "lint:fix": "eslint topics --fix",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "update": "npm update"
   },
   "author": "dy",
   "license": "ISC",
@@ -15,7 +16,7 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.2.2",
+    "eslint": "^6.3.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.2.0",
@@ -24,6 +25,6 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
-    "data-structures-again": "^1.22.0"
+    "data-structures-again": "^1.24.0"
   }
 }

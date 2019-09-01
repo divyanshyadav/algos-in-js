@@ -1,6 +1,11 @@
 const { BST } = require('data-structures-again')
 const { serialize, deserialize } = require('.')
 
+test('null cases', () => {
+    expect(serialize(null)).toEqual('X')
+    expect(deserialize('X')).toEqual(null)
+})
+
 test('serialize operation', () => {
     const tree = new BST()
     Array.from([2, 1, 3]).forEach(k => tree.insert(k))
