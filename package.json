@@ -1,5 +1,5 @@
 {
-  "name": "DSA",
+  "name": "data-structure-and-algorithms-applications",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,6 +25,6 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
-    "data-structures-again": "^1.24.0"
+    "data-structures-again": "^1.26.0"
   }
 }
