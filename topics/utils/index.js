@@ -1,3 +1,5 @@
+const Grid = require('./Grid')
+
 const swap = (array, i, j) => {
     [array[i], array[j]] = [array[j], array[i]]
 }
@@ -7,5 +9,6 @@ const clone = (array) =>
 
 module.exports = {
     swap,
-    clone
+    clone,
+    Grid
 }

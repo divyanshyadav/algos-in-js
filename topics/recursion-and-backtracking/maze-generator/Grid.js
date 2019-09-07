@@ -89,6 +89,12 @@ class Grid {
 
         return this.get(row, column)
     }
+
+    forEach (fn) {
+        this.getGrid().forEach((r, i) => r.forEach((c, j) => {
+            fn(c, i, j)
+        }))
+    }
 }
 
 if (typeof module !== 'undefined') {
