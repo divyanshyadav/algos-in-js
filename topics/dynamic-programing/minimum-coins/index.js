@@ -1,3 +1,8 @@
+/*
+    Time Complexity:  O(coins * change)
+    Space Complexity: O(change)
+*/
+
 const minCoins = (coins = [], change) => {
     const memo = new Map()
     const helper = (change) => {
@@ -6,14 +11,12 @@ const minCoins = (coins = [], change) => {
             return 0
         }
         
-        // Path doesn't exist
-        if (change < 0) {
-            return Infinity
-        }
-
         let min = Infinity
         coins.forEach(coin => {
             const remainingChange = change - coin
+            if (remainingChange < 0) {
+                return
+            }
 
             // Check in memo
             if (!memo.has(remainingChange)) {
