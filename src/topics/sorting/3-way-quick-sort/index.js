@@ -1,5 +1,5 @@
-const { swap } = require('../../utils')
-const shuffle = require('../../shuffle')
+const { swap } = require('../../../utils')
+const shuffle = require('../../math/shuffle')
 
 const partition = (array, low, high) => {
     let lt = low

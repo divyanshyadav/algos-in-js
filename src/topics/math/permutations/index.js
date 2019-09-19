@@ -5,7 +5,7 @@
     Note: Duplicates are handled.
 */
 
-const { swap, clone, validators: { checkEmptyArrayArg } } = require('../../utils')
+const { swap, clone, validators: { checkEmptyArrayArg } } = require('../../../utils')
 
 const permutations = (array) => {
     const map = new Map()

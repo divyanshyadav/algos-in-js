@@ -1,5 +1,5 @@
 const { BST, Queue } = require('data-structures-again')
-const shuffle = require('../../shuffle')
+const shuffle = require('../../math/shuffle')
 const inOrder = require('.')
 
 test('in-order traversal', () => {

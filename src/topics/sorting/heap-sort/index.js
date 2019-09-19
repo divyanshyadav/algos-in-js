@@ -3,7 +3,7 @@
     nlogn | in-place sorting algorithm
 */
 
-const { swap } = require('../../utils')
+const { swap } = require('../../../utils')
 
 const minHeapComparator = (a, b) => (a - b)
 const maxHeapComparator = (a, b) => (b - a)

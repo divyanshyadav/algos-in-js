@@ -6,8 +6,8 @@
     3) Not-Online -
 */
 
-const shuffle = require('../../shuffle')
-const { swap } = require('../../utils')
+const shuffle = require('../../math/shuffle')
+const { swap } = require('../../../utils')
 
 const sort = (array) => {
     shuffle(array)

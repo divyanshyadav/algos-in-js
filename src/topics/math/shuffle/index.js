@@ -1,4 +1,4 @@
-const { swap } = require('../utils')
+const { swap } = require('../../../utils')
 
 const shuffle = (array) => {
     for (let i = 0; i < array.length; i++) {
