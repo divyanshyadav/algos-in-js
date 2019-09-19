@@ -57,7 +57,7 @@ test('permutations of abc ', () => {
     expect(permutations(input)).toEqual(solution)
 })
 
-test('permutations of aa (duplicates)', () => {
+test('permutations of aa', () => {
     const input = ['a', 'a']
     const solution = [['a', 'a']]
     expect(permutations(input)).toEqual(solution)

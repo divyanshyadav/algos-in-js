@@ -57,7 +57,7 @@ test('case 5', () => {
     expect(output).toBe(expectedOutput)
 })
 
-test.skip('case 6', () => {
+test('case 6', () => {
     const coins = [10, 5, 2, 1]
     const change = 10000
     const output = minCoins(coins, change)
