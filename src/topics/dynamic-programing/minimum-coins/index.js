@@ -10,7 +10,7 @@ const minCoins = (coins = [], change) => {
         if (change === 0) {
             return 0
         }
-        
+
         let min = Infinity
         coins.forEach(coin => {
             const remainingChange = change - coin
@@ -22,22 +22,22 @@ const minCoins = (coins = [], change) => {
             if (!memo.has(remainingChange)) {
                 memo.set(remainingChange, helper(remainingChange))
             }
-            
+
             const current = 1 + memo.get(remainingChange)
             min = Math.min(min, current)
         })
-        
+
         // save in memo
         memo.set(change, min)
         return memo.get(change)
     }
 
     const result = helper(change)
-    
+
     if (result === Infinity) {
         return 0
     }
-    
+
     return result
 }
 

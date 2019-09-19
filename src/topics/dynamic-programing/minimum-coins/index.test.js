@@ -9,7 +9,6 @@ test('case 0', () => {
     expect(output).toBe(expectedOutput)
 })
 
-
 test('case 1', () => {
     const coins = [1, 3, 4]
     const change = 6
@@ -19,7 +18,6 @@ test('case 1', () => {
     expect(output).toBe(expectedOutput)
 })
 
-
 test('case 2', () => {
     const coins = [10, 5, 2, 1]
     const change = 1000
@@ -28,7 +26,6 @@ test('case 2', () => {
 
     expect(output).toBe(expectedOutput)
 })
-
 
 test('case 3', () => {
     const coins = [10, 5, 2, 1]
@@ -65,7 +62,6 @@ test('case 6', () => {
 
     expect(output).toBe(expectedOutput)
 })
-
 
 test('case 7', () => {
     const coins = [1, 2, 5]

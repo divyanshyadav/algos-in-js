@@ -124,7 +124,7 @@ class Maze {
         this.delay = delay
 
         // Utils
-        this.wait = (ms) => new Promise(res => setTimeout(() => res(), ms)) 
+        this.wait = (ms) => new Promise(res => setTimeout(() => res(), ms))
     }
 
     async generate () {
