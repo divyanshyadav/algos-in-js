@@ -3,7 +3,7 @@
     Space Complexity: O(change)
 */
 
-const minCoins = (coins = [], change) => {
+const minCoinsCount = (coins = [], change) => {
     const memo = new Map()
     const helper = (change) => {
         // Path exist
@@ -41,4 +41,42 @@ const minCoins = (coins = [], change) => {
     return result
 }
 
-module.exports = minCoins
+const minCoins = (coins = [], change) => {
+    const memo = new Map()
+    const helper = (change) => {
+        if (change === 0) {
+            return []
+        }
+
+        let minLength = Infinity
+        let minBag = []
+        coins.forEach(coin => {
+            const remainingChange = change - coin
+            if (remainingChange < 0) {
+                return
+            }
+
+            // Check in memo
+            if (!memo.has(remainingChange)) {
+                memo.set(remainingChange, helper(remainingChange))
+            }
+
+            const newBag = [coin, ...memo.get(remainingChange)]
+            if (newBag.length < minLength) {
+                minBag = newBag
+                minLength = newBag.length
+            }
+        })
+
+        // save in memo
+        memo.set(change, minBag)
+        return memo.get(change)
+    }
+
+    return helper(change)
+}
+
+module.exports = {
+    minCoins,
+    minCoinsCount
+}

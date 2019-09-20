@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint:fix": "eslint src --fix",
-    "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
+    "test": "jest",
+    "lint:fix": "eslint src --fix",
     "update": "npm update"
   },
   "author": "dy",
