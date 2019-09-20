@@ -56,9 +56,9 @@ test('case 5', () => {
 
 test('case 6', () => {
     const coins = [10, 5, 2, 1]
-    const change = 21548
+    const change = 1000
     const output = minCoinsCount(coins, change)
-    const expectedOutput = 2157
+    const expectedOutput = 100
 
     expect(output).toBe(expectedOutput)
 })
