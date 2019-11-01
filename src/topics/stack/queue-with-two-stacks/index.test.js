@@ -2,9 +2,9 @@ const createQueue = require('.')
 
 test('empty queue', () => {
     const queue = createQueue()
-    expect(queue.peek()).toEqual(undefined)
-    expect(queue.dequeue()).toEqual(undefined)
-    expect(queue.dequeue()).toEqual(undefined)
+    expect(queue.peek()).toBeNull()
+    expect(queue.dequeue()).toBeUndefined()
+    expect(queue.dequeue()).toBeUndefined()
 })
 
 test('enqueue and peek operations', () => {
