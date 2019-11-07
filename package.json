@@ -26,6 +26,6 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
-    "data-structures-again": "^1.29.0"
+    "data-structures-again": "^2.0.0"
   }
 }
