@@ -7,5 +7,5 @@ test('case 1', () => {
 
 test('case 2', () => {
     const input = [2, 4, 6, 10]
-    expect(countSets(input, 8)).toBe(1)
+    expect(countSets(input, 2)).toBe(1)
 })
