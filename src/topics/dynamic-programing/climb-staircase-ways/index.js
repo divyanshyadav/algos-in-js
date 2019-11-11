@@ -1,5 +1,5 @@
 /*
-    Number of ways to climb up the staircase
+    Count total number of ways to climb up the staircase
     Given: staircase size and allows step(s) taken at a time
 */
 
