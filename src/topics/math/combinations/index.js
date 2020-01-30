@@ -5,7 +5,7 @@ const combinations = (array = []) => {
     const buffer = []
 
     const helper = (array, start) => {
-        if (start > array.length - 1) {
+        if (start >= array.length) {
             return
         }
 
@@ -21,4 +21,28 @@ const combinations = (array = []) => {
     return result
 }
 
-module.exports = combinations
+const combinations2 = (array = []) => {
+    const result = []
+
+    const helper = (array, buffer, i) => {
+        if (i >= array.length) {
+            result.push(clone(buffer))
+            return
+        }
+
+        // include this item
+        buffer.push(array[i])
+        helper(array, buffer, i + 1)
+
+        // dont include this item
+        buffer.pop()
+        helper(array, buffer, i + 1)
+    }
+
+    helper(array, [], 0)
+
+    // excluding null set
+    return result.slice(0, -1)
+}
+
+module.exports = combinations2

@@ -12,6 +12,6 @@ test('in-order traversal', () => {
     const nodes = new Queue()
     inOrder(bst.root, v => nodes.enqueue(v))
 
-    expect(nodes.values())
+    expect(nodes.toArray())
         .toEqual(bst.inOrder())
 })
