@@ -24,7 +24,7 @@ test('invalid input', () => {
 test('permutations of a ', () => {
     const input = ['a']
 
-    // per = 1 = 1
+    // per => 1! => 1
 
     const solution = [['a']]
 
@@ -34,7 +34,7 @@ test('permutations of a ', () => {
 test('permutations of ab', () => {
     const input = ['a', 'b']
 
-    // per = 2 x 1 = 6
+    // per => 2! => 2 x 1 => 6
 
     const solution = [['a', 'b'], ['b', 'a']]
     expect(permutations(input)).toEqual(solution)
@@ -43,7 +43,7 @@ test('permutations of ab', () => {
 test('permutations of abc ', () => {
     const input = ['a', 'b', 'c']
 
-    // per = 3 x 2 x 1 = 6
+    // per => 3! => 3 x 2 x 1 => 6
 
     const solution = [
         ['a', 'b', 'c'],
