@@ -1,5 +1,12 @@
 const subArray = require('.')
 
+test('case -1', () => {
+    const input = 5
+    const expected = undefined
+
+    expect(subArray(input)).toBe(expected)
+})
+
 test('case 0', () => {
     const input = undefined
     const expected = undefined
@@ -50,6 +57,14 @@ test('case 6', () => {
     const input = [0, 0, 2, 2, -1, -2]
     const actualOutput = subArray(input)
     const expectedOutput = [2, 2]
+
+    expect(actualOutput).toEqual(expectedOutput)
+})
+
+test('case 7', () => {
+    const input = [-5, -3, -1, -2, -5]
+    const actualOutput = subArray(input)
+    const expectedOutput = [-1]
 
     expect(actualOutput).toEqual(expectedOutput)
 })

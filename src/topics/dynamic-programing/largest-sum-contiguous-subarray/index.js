@@ -1,12 +1,12 @@
 const largestSumContiguousSubArray = (array) => {
-    if (!array) {
+    if (!Array.isArray(array)) {
         return undefined
     }
 
-    let startIndex = 0
-    let endIndex = 0
     let maxTillNow = -Infinity
     let max = -Infinity
+    let startIndex = 0
+    let endIndex = 0
     let maxStartIndex = 0
     let maxEndIndex = 0
 
