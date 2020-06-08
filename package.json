@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:watch": "jest --watchAll",
+    "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test": "jest",
     "lint:fix": "eslint src --fix",
@@ -13,19 +13,19 @@
   "author": "dy",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "@types/jest": "^24.0.21",
-    "babel-jest": "^24.9.0",
-    "eslint": "^6.6.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@types/jest": "^24.9.1",
+    "babel-jest": "^26.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^9.2.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^24.9.0"
+    "jest": "^26.0.1"
   },
   "dependencies": {
-    "data-structures-again": "^2.0.0"
+    "data-structures-again": "^2.1.2"
   }
 }
