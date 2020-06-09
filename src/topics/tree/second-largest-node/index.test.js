@@ -21,8 +21,7 @@ test('case 1', () => {
 test('case 2', () => {
     /*
             200
-        50
-    10
+        10      201
     */
 
     const bst = new BST()
@@ -31,4 +30,19 @@ test('case 2', () => {
     bst.insert(10)
 
     expect(secondLargestNode(bst.root)).toBe(200)
+})
+
+test('case 3', () => {
+    /*
+                200
+            50
+        10
+    */
+
+    const bst = new BST()
+    bst.insert(200)
+    bst.insert(50)
+    bst.insert(10)
+
+    expect(secondLargestNode(bst.root)).toBe(50)
 })
