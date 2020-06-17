@@ -78,5 +78,53 @@ function maxSubarraySumO2 (array) {
     return max
 }
 
+/*
+    Time complexity: O(nlogn)
+    Space complexity: O(1)
+
+    Approach: Divide and Conquerer
+*/
+
+function maxSubarraySumDC (array) {
+    const helper = (array, start, end) => {
+        if (start > end) {
+            return -Infinity
+        }
+
+        if (start === end) {
+            return array[start]
+        }
+
+        const mid = start + Math.floor((end - start) / 2)
+
+        const leftMss = helper(array, start, mid)
+        const rightMss = helper(array, mid + 1, end)
+
+        let leftMax = -Infinity
+        let rightMax = -Infinity
+        let sum = 0
+
+        for (let i = mid; i >= start; i--) {
+            sum += array[i]
+            if (sum > leftMax) {
+                leftMax = sum
+            }
+        }
+
+        sum = 0
+        for (let i = mid + 1; i <= end; i++) {
+            sum += array[i]
+            if (sum > rightMax) {
+                rightMax = sum
+            }
+        }
+
+        return Math.max(leftMss, rightMss, leftMax + rightMax)
+    }
+
+    return helper(array, 0, array.length - 1)
+}
+
 module.exports = maxSubarraySumO3
 module.exports = maxSubarraySumO2
+module.exports = maxSubarraySumDC
