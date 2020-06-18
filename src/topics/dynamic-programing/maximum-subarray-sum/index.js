@@ -2,6 +2,8 @@
     Time complexity: O(n^3)
     Space complexity: O(1)
 
+    Approach: Brute-force
+
     eg. array = [1, 2, 3]
     then it will iterate sub-arrays like
 
@@ -28,7 +30,7 @@ function maxSubarraySumO3 (array) {
     for (let size = 1; size <= array.length; size++) {
         for (let start = 0; start < array.length; start += 1) {
             // invalid subarray check
-            if (start + size >= array.length) {
+            if (start + size > array.length) {
                 break
             }
 
@@ -44,6 +46,8 @@ function maxSubarraySumO3 (array) {
 /*
     Time complexity: O(n^2)
     Space complexity: O(1)
+
+    Approach: Brute-force
 
     eg. array = [1, 2, 3]
     then it will iterate sub-arrays like
@@ -63,9 +67,9 @@ function maxSubarraySumO2 (array) {
     for (let start = 0; start < array.length; start++) {
         let sum = 0
         // sub arrays
-        for (let size = 1; size < array.length; size++) {
+        for (let size = 1; size <= array.length; size++) {
             // invalid subarray check
-            if (start + size >= array.length) {
+            if (start + size > array.length) {
                 break
             }
 
@@ -125,6 +129,49 @@ function maxSubarraySumDC (array) {
     return helper(array, 0, array.length - 1)
 }
 
+/*
+    Time complexity: O(n)
+    space complexity: O(1)
+
+    approach: Kadane's algorithm
+
+    note: doesn't work on all negative numbers
+*/
+
+const maxSubarraySumKadane = (array) => {
+    let max = -Infinity
+    let sum = 0
+
+    array.forEach((item) => {
+        sum = sum + item > 0 ? sum + item : 0
+        max = Math.max(max, sum)
+    })
+
+    return max
+}
+
+/*
+    Time complexity: O(n)
+    space complexity: O(1)
+
+    approach: Dynamic programing
+
+*/
+
+const maxSubarraySumDP = (array) => {
+    let max = -Infinity
+    let sum = -Infinity
+
+    array.forEach((item) => {
+        sum = Math.max(sum + item, item)
+        max = Math.max(max, sum)
+    })
+
+    return max
+}
+
 module.exports = maxSubarraySumO3
 module.exports = maxSubarraySumO2
 module.exports = maxSubarraySumDC
+module.exports = maxSubarraySumKadane
+module.exports = maxSubarraySumDP

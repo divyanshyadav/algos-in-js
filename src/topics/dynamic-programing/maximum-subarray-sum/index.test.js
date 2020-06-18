@@ -29,3 +29,18 @@ test('case 6', () => {
     const array = [-2, -3, 4, -1, -2, 1, 5, -3]
     expect(maxSubarraySum(array)).toBe(7)
 })
+
+test('case 7', () => {
+    const array = [1, -3, 2, -5, 7, 6, -1, -4, 11, -23]
+    expect(maxSubarraySum(array)).toBe(19)
+})
+
+test('case 8', () => {
+    const array = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+    expect(maxSubarraySum(array)).toBe(6)
+})
+
+test('case 9', () => {
+    const array = [-1]
+    expect(maxSubarraySum(array)).toBe(-1)
+})
