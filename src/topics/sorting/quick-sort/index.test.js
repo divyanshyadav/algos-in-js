@@ -24,3 +24,8 @@ test('quick sort with duplicates', () => {
     const array = [2, 2, 2, 1]
     expect(sort(array)).toEqual([1, 2, 2, 2])
 })
+
+test('quick sort on sorted array', () => {
+    const array = [1, 2, 3, 4]
+    expect(sort(array)).toEqual(array)
+})
