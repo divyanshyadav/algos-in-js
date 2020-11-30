@@ -9,7 +9,7 @@ function isACyclic (graph, start) {
         let flag = true
 
         for (let i = 0; i < adjVertices.length; i++) {
-            const neighbor = graph.getVertex(adjVertices[i])
+            const neighbor = graph.getVertex(adjVertices[i].name)
 
             if (!neighbor.visited) {
                 flag = helper(neighbor)

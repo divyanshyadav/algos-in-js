@@ -27,7 +27,7 @@
     "jest-watch-typeahead": "^0.6.1"
   },
   "dependencies": {
-    "data-structures-again": "^2.1.4"
+    "data-structures-again": "^2.1.10"
   },
   "jest": {
     "watchPlugins": [

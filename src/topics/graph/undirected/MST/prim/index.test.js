@@ -18,11 +18,10 @@ test('case 1', () => {
     graph.addUndirectedEdge('a', 'c', 30)
     graph.addUndirectedEdge('b', 'c', 10)
 
-    const edges = graph.getEdges(graph)
-    expect(getMST(edges)).toEqual([['b', 'c', 10], ['a', 'b', 20]])
+    expect(getMST(graph)).toEqual([['b', 'c', 10], ['a', 'b', 20]])
 })
 
-test('case 1', () => {
+test.only('case 2', () => {
     const graph = new Graph()
 
     graph.addVertex('0')
@@ -31,6 +30,7 @@ test('case 1', () => {
     graph.addVertex('3')
     graph.addVertex('4')
     graph.addVertex('5')
+
     graph.addUndirectedEdge('0', '1', 4)
     graph.addUndirectedEdge('0', '2', 6)
     graph.addUndirectedEdge('1', '2', 6)
@@ -41,12 +41,11 @@ test('case 1', () => {
     graph.addUndirectedEdge('3', '5', 3)
     graph.addUndirectedEdge('4', '5', 7)
 
-    const edges = graph.getEdges(graph)
-    expect(getMST(edges)).toEqual([
+    expect(getMST(graph)).toEqual([
+        ['1', '0', 4],
         ['2', '3', 1],
-        ['3', '4', 2],
-        ['1', '3', 3],
-        ['3', '5', 3],
-        ['0', '1', 4]
+        ['3', '1', 3],
+        ['4', '3', 2],
+        ['5', '3', 3]
     ])
 })

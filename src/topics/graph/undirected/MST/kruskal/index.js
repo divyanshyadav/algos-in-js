@@ -1,5 +1,10 @@
 const { DisjointSet } = require('data-structures-again')
 
+/*
+    E - No. of edges
+    V - No. of vertices
+    Time complexity: O(ElogE + VlogE + VlogE)
+*/
 function getMST (edges) {
     edges.sort((a, b) => a[2] - b[2])
 

@@ -1,8 +1,8 @@
-# Minimum Spanning Tree
+# Minimum Spanning Tree(MST
 
 Minimum spanning: Connects all vertices with min edge weights
 Tree: Has no cycles
 
-
-## Algorithms for undirected graph
-* Kruskal
+## Algorithms to find MST
+- Kruskal
+- Prim
