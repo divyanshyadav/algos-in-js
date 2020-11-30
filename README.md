@@ -1,3 +1,5 @@
+![Alt text](/topics.png "Topics")
+
 # DSA
 
 This repository contains implementation of various algorithms.
