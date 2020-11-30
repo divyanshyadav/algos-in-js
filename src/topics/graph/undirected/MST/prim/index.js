@@ -1,10 +1,12 @@
-const { Heap } = require('data-structures-again')
-
 /*
-    Time complexity: O(v^2)
-    Space complexity: O(v)
+    n = No. of vertices
+    m = No. of edges
+
+    Time complexity: O(n^2)
+    Space complexity: O(n + m)
 */
-function getMST (graph) {
+
+function MSTPrim (graph) {
     const dist = graph.getVertices().reduce((acc, v) => {
         acc.set(v.name, Infinity)
         return acc
@@ -55,4 +57,4 @@ function getMinNode (dist, mstSet) {
     return minNode
 }
 
-module.exports = getMST
+module.exports = MSTPrim

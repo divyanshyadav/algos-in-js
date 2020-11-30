@@ -1,11 +1,13 @@
 const { DisjointSet } = require('data-structures-again')
 
 /*
-    E - No. of edges
-    V - No. of vertices
-    Time complexity: O(ElogE + VlogE + VlogE)
+    m = No. of edges
+    n = No. of vertices
+
+    Time complexity: O(mlogm + mlogn + n)
+    Space complexity: O(n + m)
 */
-function getMST (edges) {
+function MSTKruskal (edges) {
     edges.sort((a, b) => a[2] - b[2])
 
     const ds = new DisjointSet()
@@ -22,4 +24,4 @@ function getMST (edges) {
     return mstEdges
 }
 
-module.exports = getMST
+module.exports = MSTKruskal
