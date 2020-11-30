@@ -10,3 +10,6 @@ Go through topics to find more.
 - Minimum spanning tree(MST)
     - [X] Kruskal's algorithm
     - [X] Prim's algorithm
+
+## Input size(n) vs time
+![Alt text](/order.png "order-of-growth")
