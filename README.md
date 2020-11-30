@@ -5,6 +5,6 @@ Go through topics to find more.
 
 ## Graph
 
-* Minimum spanning tree(MST)
-    [X] Kruskal's algorithm
-    [] Prim's algorithm
+- Minimum spanning tree(MST)
+    - [X] Kruskal's algorithm
+    - [] Prim's algorithm
