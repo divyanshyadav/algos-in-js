@@ -7,4 +7,4 @@ Go through topics to find more.
 
 - Minimum spanning tree(MST)
     - [X] Kruskal's algorithm
-    - [] Prim's algorithm
+    - [ ] Prim's algorithm
