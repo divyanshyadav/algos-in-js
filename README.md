@@ -5,5 +5,6 @@ Go through topics to find more.
 
 ## Graph
 
-* Minimum spanning tree of Undirected Graph
-    * Kruskal
+* Minimum spanning tree(MST)
+    [X] Kruskal's algorithm
+    [] Prim's algorithm
