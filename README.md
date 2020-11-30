@@ -1,6 +1,6 @@
 ![Alt text](/topics.png "Topics")
 
-# DSA
+# Algorithms in JavaScript
 
 This repository contains implementation of various algorithms.
 Go through topics to find more.
