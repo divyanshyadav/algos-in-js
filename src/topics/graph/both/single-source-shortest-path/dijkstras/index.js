@@ -1,3 +1,10 @@
+/*
+    n = vertices
+    m = edges
+    Time complexity: O(n ^ 2)
+
+*/
+
 function getShortestPathDijkstra (graph, src, target) {
     const distances = graph.getVertices().reduce((map, v) => {
         map.set(v.name, Infinity)
