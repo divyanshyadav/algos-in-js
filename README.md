@@ -12,7 +12,7 @@ Go through topics to find more.
     - [X] Prim's algorithm
 
 - Single-source shortest path
-    - [ ] Dijkstra 
+    - [X] Dijkstra 
 
 ## Input size(n) vs time
 ![Alt text](/order.png "order-of-growth")
