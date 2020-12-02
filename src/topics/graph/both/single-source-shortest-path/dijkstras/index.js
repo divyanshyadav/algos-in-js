@@ -1,8 +1,8 @@
 /*
     n = vertices
-    m = edges
-    Time complexity: O(n ^ 2)
 
+    Time complexity: O(n ^ 2)
+    Space complexity: O(n)
 */
 
 function getShortestPathDijkstra (graph, src, target) {
