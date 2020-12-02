@@ -1,24 +1,24 @@
+const getShortestPath = require('.')
 const { Graph } = require('data-structures-again')
-const getMST = require('.')
 
 test('case 1', () => {
     const graph = new Graph()
 
     /*
             a
-       20 /   \  30
+        1 /   \  2
         b ----- c
-            10
+            5
     */
 
     graph.addVertex('a')
     graph.addVertex('b')
     graph.addVertex('c')
-    graph.addUndirectedEdge('a', 'b', 20)
-    graph.addUndirectedEdge('a', 'c', 30)
-    graph.addUndirectedEdge('b', 'c', 10)
+    graph.addUndirectedEdge('a', 'b', 1)
+    graph.addUndirectedEdge('a', 'c', 2)
+    graph.addUndirectedEdge('b', 'c', 5)
 
-    expect(getMST(graph)).toEqual([['b', 'c', 10], ['a', 'b', 20]])
+    expect(getShortestPath(graph, 'b', 'c')).toEqual(['b', 'a', 'c'])
 })
 
 test('case 2', () => {
@@ -41,11 +41,5 @@ test('case 2', () => {
     graph.addUndirectedEdge('3', '5', 3)
     graph.addUndirectedEdge('4', '5', 7)
 
-    expect(getMST(graph)).toEqual([
-        ['1', '0', 4],
-        ['2', '3', 1],
-        ['3', '1', 3],
-        ['4', '3', 2],
-        ['5', '3', 3]
-    ])
+    expect(getShortestPath(graph, '0', '5')).toEqual(['0', '1', '3', '5'])
 })
