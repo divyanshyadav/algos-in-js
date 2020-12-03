@@ -16,3 +16,11 @@ Go through topics to find more.
 
 ## Input size(n) vs time
 ![Alt text](/order.png "order-of-growth")
+
+## Avialable scripts
+
+In the project directory, you can run:
+
+### `npm test`
+
+Runs all unit test.

@@ -17,8 +17,7 @@ test('case 1', () => {
     graph.addUndirectedEdge('a', 'b', 20)
     graph.addUndirectedEdge('a', 'c', 30)
     graph.addUndirectedEdge('b', 'c', 10)
-
-    expect(getMST(graph)).toEqual([['b', 'c', 10], ['a', 'b', 20]])
+    expect(getMST(graph)).toEqual([['b', 'a', 20], ['c', 'b', 10]])
 })
 
 test('case 2', () => {
