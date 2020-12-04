@@ -17,9 +17,12 @@ Go through topics to find more.
 ## Input size(n) vs time
 ![Alt text](/order.png "order-of-growth")
 
-## Avialable scripts
+## Available scripts
 
 In the project directory, you can run:
+
+### `npm install`
+Installs project dependencies.
 
 ### `npm test`
 
