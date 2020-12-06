@@ -24,4 +24,34 @@ function canConstruct (target, words, memo = {}) {
     return false
 }
 
-module.exports = canConstruct
+/*
+    n = target.length
+    m = words.length
+
+    time complexity: O(n * m * n)
+    space complexity: O(n * n)
+*/
+function canConstructTabulation (target, words) {
+    const table = {}
+    table[''] = true
+
+    words.forEach(word => { table[word] = true })
+
+    for (let i = 1; i <= target.length + 1; i++) {
+        const string = target.slice(0, i)
+        for (const word of words) {
+            if (string.indexOf(word) === 0) {
+                if (string.slice(word.length) in table) {
+                    table[string] = true
+                }
+            }
+        }
+    }
+
+    return target in table
+}
+
+module.exports = {
+    canConstruct,
+    canConstructTabulation
+}
