@@ -20,7 +20,7 @@ const coinChangeWays = (change, coins, index = 0) => {
         return 1
     }
 
-    const key = `${change}${index}`
+    const key = `${change},${index}`
 
     if (memo.has(key)) {
         return memo.get(key)
