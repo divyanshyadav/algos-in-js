@@ -42,9 +42,16 @@ test('case 6', () => {
     expect(actual).toBe(expected)
 })
 
-test('case 1', () => {
+test('case 7', () => {
     const actual = canConstructTabulation('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd'])
     const expected = true
+
+    expect(actual).toBe(expected)
+})
+
+test('case 8', () => {
+    const actual = canConstructTabulation('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])
+    const expected = false
 
     expect(actual).toBe(expected)
 })
