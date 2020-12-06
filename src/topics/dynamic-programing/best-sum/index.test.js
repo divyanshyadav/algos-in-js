@@ -13,3 +13,10 @@ test('case 2', () => {
 
     expect(actual).toEqual(expected)
 })
+
+test('case 3', () => {
+    const actual = bestSum(8, [2, 3, 5])
+    const expected = [5, 3]
+
+    expect(actual).toEqual(expected)
+})

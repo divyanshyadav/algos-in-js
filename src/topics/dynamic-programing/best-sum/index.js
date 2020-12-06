@@ -2,22 +2,13 @@
 // time: O(n*m * m)
 // space: O(m*m)
 
-
-function bestSum(targetSum, nums, memo = {}) {
-    if (targetSum in memo) {
-        return memo[targetSum]
-    }
-
-    if (targetSum === 0) {
-        return []
-    }
-
-    if (targetSum < 0) {
-        return null
-    }
+function bestSum (targetSum, nums, memo = {}) {
+    if (targetSum in memo) return memo[targetSum]
+    if (targetSum === 0) return []
+    if (targetSum < 0) return null
 
     let shortestCombination = null
-    for (let num of nums) {
+    for (const num of nums) {
         const reminder = targetSum - num
         const array = bestSum(reminder, nums, memo)
         if (array !== null) {
