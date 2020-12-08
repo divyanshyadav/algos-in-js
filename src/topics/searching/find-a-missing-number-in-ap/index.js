@@ -3,42 +3,34 @@ const find = (ap) => {
         return undefined
     }
 
-    const a = ap[0]
-    const d = diff(a, ap[ap.length - 1], ap.length)
+    const first = ap[0]
+    const last = ap[ap.length - 1]
+    const diff = (last - first) / ap.length
 
-    const missingIndex = binarySearch(ap, (mid) => {
-        const actual = nth(a, mid, d)
-        const current = ap[mid]
-        return current - actual
-    })
-
-    return nth(a, missingIndex, d)
+    return binarySearch(ap, diff)
 }
 
-const diff = (firstTerm, lastTerm, totalTerms) => {
-    return (lastTerm - firstTerm) / totalTerms
-}
+function binarySearch (ap, diff) {
+    let low = 0
+    let high = ap.length - 1
 
-const nth = (a, n, diff) => {
-    return a + (n) * diff
-}
+    while (low <= high) {
+        const mid = Math.floor((low + high) / 2)
 
-const binarySearch = (array, comparator) => {
-    const helper = (array, start, end) => {
-        if (start > end) {
-            return start
+        if (mid > 0 && ap[mid] - ap[mid - 1] !== diff) {
+            return ap[mid] - diff
         }
 
-        const mid = Math.floor(start + (end - start) / 2)
+        if (ap[mid + 1] - ap[mid] !== diff) {
+            return ap[mid] + diff
+        }
 
-        if (comparator(mid) === 0) {
-            return helper(array, mid + 1, end)
+        if (ap[0] + mid * diff === ap[mid]) {
+            low = mid + 1
         } else {
-            return helper(array, start, mid - 1)
+            high = mid - 1
         }
     }
-
-    return helper(array, 0, array.length - 1)
 }
 
 module.exports = find
