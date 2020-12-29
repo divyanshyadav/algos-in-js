@@ -16,6 +16,7 @@ Go through topics to find more.
 
 ## Input size(n) vs time
 ![Alt text](/order.png "order-of-growth")
+![Alt text](/time-complexities.png "rate-of-growth")
 
 ## Available scripts
 
