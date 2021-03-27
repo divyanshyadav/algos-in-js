@@ -9,14 +9,14 @@
 const shuffle = require('../../math/shuffle')
 const { swap } = require('../../../utils')
 
-const sort = (array) => {
+const sort = (array, asc = true) => {
     shuffle(array)
 
     const quickSort = (array, low, high) => {
         if (low >= high) { return }
 
-        const j = partition(array, low, high)
-        quickSort(array, low, j)
+        const j = asc ? partition(array, low, high) : partitionDesc(array, low, high)
+        quickSort(array, low, j - 1)
         quickSort(array, j + 1, high)
     }
 
@@ -25,32 +25,63 @@ const sort = (array) => {
     return array
 }
 
-const partition = (array, low, high) => {
-    let i = low + 1
-    let j = high
+const partitionDesc = (array, low, high) => {
+    let i = low - 1
+    const item = array[high]
 
-    while (true) {
-        while (array[i] <= array[low]) {
-            i += 1
-            if (i === high) { break }
+    for (let j = low; j < high; j++) {
+        if (array[j] >= item) {
+            i++
+            swap(array, i, j)
         }
-
-        while (array[j] >= array[low]) {
-            j -= 1
-            if (j === low) { break }
-        }
-
-        if (i >= j) { break }
-
-        swap(array, i, j)
     }
 
-    swap(array, j, low)
+    swap(array, i + 1, high)
+    return i + 1
+}
 
-    return j
+const partition = (array, low, high) => {
+    let i = low - 1
+    const item = array[high]
+    let flag = true
+
+    for (let j = low; j < high; j++) {
+        if (array[j] <= item) {
+            if (array[j] < item) flag = false
+            i++
+            swap(array, i, j)
+        } else {
+            flag = false
+        }
+    }
+
+    swap(array, i + 1, high)
+    if (flag) {
+        return Math.floor((low + high) / 2)
+    }
+    return i + 1
+}
+
+function randomizedQuickSort (arr) {
+    function helper (arr, low, high) {
+        if (low >= high) return
+        const pivot = randomizedPartition(arr, low, high)
+        helper(arr, low, pivot - 1)
+        helper(arr, pivot + 1, high)
+    }
+
+    helper(arr, 0, arr.length - 1)
+    return arr
+}
+
+function randomizedPartition (arr, low, high) {
+    const index = Math.floor(Math.random() * (high - low + 1) + low)
+    swap(arr, high, index)
+    return partition(arr, low, high)
 }
 
 module.exports = {
     partition,
-    sort
+    sort: randomizedQuickSort,
+    sortDesc: (arr) => sort(arr, false)
 }

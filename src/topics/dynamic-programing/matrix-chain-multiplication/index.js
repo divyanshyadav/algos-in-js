@@ -8,7 +8,7 @@ function minCostHelper (arr, start, end) {
     }
 
     let min = Infinity
-    for (let k = start; k <= end - 1; k++) {
+    for (let k = start; k < end; k++) {
         min = Math.min(min,
             minCostHelper(arr, start, k) +
             minCostHelper(arr, k + 1, end) +
