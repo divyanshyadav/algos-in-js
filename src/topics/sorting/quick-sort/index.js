@@ -80,8 +80,35 @@ function randomizedPartition (arr, low, high) {
     return partition(arr, low, high)
 }
 
+function hoarPartition (arr, low, high) {
+    let i = low - 1
+    let j = high + 1
+    const item = arr[low]
+
+    while (true) {
+        do { j-- } while (arr[j] > item)
+        do { i++ } while (arr[i] < item)
+        if (i < j) swap(arr, i, j)
+        else return j
+    }
+}
+
+function quickSortUsingHoarPartition (arr) {
+    function helper (arr, low, high) {
+        if (low === high) return
+        const pivot = hoarPartition(arr, low, high)
+        helper(arr, low, pivot)
+        helper(arr, pivot + 1, high)
+    }
+
+    helper(arr, 0, arr.length - 1)
+    return arr
+}
+
 module.exports = {
     partition,
     sort: randomizedQuickSort,
-    sortDesc: (arr) => sort(arr, false)
+    sortDesc: (arr) => sort(arr, false),
+    hoarPartition,
+    quickSortUsingHoarPartition
 }

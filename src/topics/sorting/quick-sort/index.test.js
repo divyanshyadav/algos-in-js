@@ -1,4 +1,4 @@
-const { partition, sort, sortDesc } = require('.')
+const { partition, sort, sortDesc, hoarPartition, quickSortUsingHoarPartition } = require('.')
 
 test('partition with 1 elements', () => {
     const array = [1]
@@ -38,4 +38,19 @@ test('quick sort desc', () => {
 test('partition should give mid index if all items are same', () => {
     const array = [1, 1, 1, 1]
     expect(partition(array, 0, array.length - 1)).toBe(1)
+})
+
+test('hoare partition', () => {
+    const array = [13, 19, 9, 5, 12, 8, 7, 4, 11, 2, 6, 21]
+    const index = hoarPartition(array, 0, array.length - 1)
+    expect(array).toEqual(
+        [6, 2, 9, 5, 12, 8, 7, 4, 11, 19, 13, 21]
+    )
+    expect(index).toBe(8)
+})
+
+test('quick sort using hoare partition', () => {
+    const array = [13, 19, 9, 5, 12, 8, 7, 4, 11, 2, 6, 21]
+    quickSortUsingHoarPartition(array)
+    expect(array).toEqual(array.sort())
 })
