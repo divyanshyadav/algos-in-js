@@ -105,10 +105,61 @@ function quickSortUsingHoarPartition (arr) {
     return arr
 }
 
+function threeWayPartition (arr, low, high) {
+    let q = low - 1
+    let t = low - 1
+    const item = arr[high]
+
+    for (let j = 0; j < high; j++) {
+        if (arr[j] === item) {
+            t++
+            swap(arr, t, j)
+        } else if (arr[j] < item) {
+            t++
+            swap(arr, t, j)
+            q++
+            swap(arr, t, q)
+        }
+    }
+
+    t++
+    swap(arr, t, high)
+    q++
+    return [q, t]
+}
+
+function threeWayQuickSort (arr) {
+    function helper (arr, low, high) {
+        if (low >= high) return
+        const [start, end] = threeWayPartition(arr, low, high)
+        helper(arr, low, start - 1)
+        helper(arr, end + 1, high)
+    }
+
+    helper(arr, 0, arr.length - 1)
+    return arr
+}
+
+function tailRecursiveQuickSort (arr) {
+    function helper (arr, low, high) {
+        while (low < high) {
+            const pivot = partition(arr, low, high)
+            helper(arr, low, pivot - 1)
+            low = pivot + 1
+        }
+    }
+
+    helper(arr, 0, arr.length - 1)
+    return arr
+}
+
 module.exports = {
     partition,
     sort: randomizedQuickSort,
     sortDesc: (arr) => sort(arr, false),
     hoarPartition,
-    quickSortUsingHoarPartition
+    quickSortUsingHoarPartition,
+    threeWayPartition,
+    threeWayQuickSort,
+    tailRecursiveQuickSort
 }

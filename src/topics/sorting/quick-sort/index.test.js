@@ -1,4 +1,4 @@
-const { partition, sort, sortDesc, hoarPartition, quickSortUsingHoarPartition } = require('.')
+const { partition, sort, sortDesc, hoarPartition, quickSortUsingHoarPartition, threeWayPartition, threeWayQuickSort, tailRecursiveQuickSort } = require('.')
 
 test('partition with 1 elements', () => {
     const array = [1]
@@ -52,5 +52,33 @@ test('hoare partition', () => {
 test('quick sort using hoare partition', () => {
     const array = [13, 19, 9, 5, 12, 8, 7, 4, 11, 2, 6, 21]
     quickSortUsingHoarPartition(array)
+    expect(array).toEqual(array.sort())
+})
+
+test('quick sort using hoare partition', () => {
+    const array = [13, 14]
+    quickSortUsingHoarPartition(array)
+    expect(array).toEqual(array.sort())
+})
+
+test('3-way partition', () => {
+    const array = [2, 3, 1, 2, 1, 2]
+    const expected = [1, 1, 2, 2, 2, 3]
+    const [start, end] = threeWayPartition(array, 0, array.length - 1)
+
+    expect(array).toEqual(expected)
+    expect(start).toBe(2)
+    expect(end).toBe(4)
+})
+
+test('3-way partition quick sort', () => {
+    const array = [13, 19, 19, 19, 12, 8, 8, 4, 11, 8, 6, 21]
+    threeWayQuickSort(array)
+    expect(array).toEqual(array.sort())
+})
+
+test('tail recursive quick sort', () => {
+    const array = [13, 19, 9, 5, 12, 8, 7, 4, 11, 2, 6, 21]
+    tailRecursiveQuickSort(array)
     expect(array).toEqual(array.sort())
 })
