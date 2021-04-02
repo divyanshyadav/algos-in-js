@@ -153,6 +153,24 @@ function tailRecursiveQuickSort (arr) {
     return arr
 }
 
+function tailRecursiveQuickSortOptimized (arr) {
+    function helper (arr, low, high) {
+        while (low < high) {
+            const pivot = partition(arr, low, high)
+            if (pivot - low < high - pivot) {
+                helper(arr, low, pivot - 1)
+                low = pivot + 1
+            } else {
+                helper(arr, pivot + 1, high)
+                high = pivot - 1
+            }
+        }
+    }
+
+    helper(arr, 0, arr.length - 1)
+    return arr
+}
+
 module.exports = {
     partition,
     sort: randomizedQuickSort,
@@ -161,5 +179,6 @@ module.exports = {
     quickSortUsingHoarPartition,
     threeWayPartition,
     threeWayQuickSort,
-    tailRecursiveQuickSort
+    tailRecursiveQuickSort: tailRecursiveQuickSortOptimized
+
 }
