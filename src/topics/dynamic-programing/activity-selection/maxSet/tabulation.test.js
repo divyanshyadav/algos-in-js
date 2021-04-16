@@ -8,7 +8,7 @@ test('case 1', () => {
         [4, 13]
     ]
 
-    expect(activitySelection(activities)).toEqual(3)
+    expect(activitySelection(activities)).toEqual([[3, 6], [9, 10], [11, 15]])
 })
 
 test('case 2', () => {
@@ -21,7 +21,7 @@ test('case 2', () => {
         [12, 16]
     ]
 
-    expect(activitySelection(activities)).toEqual(4)
+    expect(activitySelection(activities)).toEqual([[1, 4], [5, 7], [8, 11], [12, 16]])
 })
 
 test('case 3', () => {
@@ -29,5 +29,5 @@ test('case 3', () => {
         [1, 4], [2, 5], [4, 7], [1, 8]
     ]
 
-    expect(activitySelection(activities)).toBe(2)
+    expect(activitySelection(activities)).toEqual([[1, 4], [4, 7]])
 })
