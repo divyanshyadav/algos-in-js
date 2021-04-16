@@ -7,7 +7,7 @@ Go through topics to find more.
 
 ## Greedy
 
-- [ ] Activity selection
+- [ ] [Activity selection](https://github.com/divyanshyadav/algos-in-js/tree/master/src/topics/greedy/activity-selection)
 
 ## Graph
 
