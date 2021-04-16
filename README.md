@@ -5,6 +5,10 @@
 This repository contains implementation of various algorithms.
 Go through topics to find more.
 
+## Greedy
+
+- [ ] Activity selection
+
 ## Graph
 
 - Minimum spanning tree(MST)
