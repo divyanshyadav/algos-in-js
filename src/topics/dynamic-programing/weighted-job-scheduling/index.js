@@ -1,8 +1,6 @@
 function weightedJobScheduling (activities, weights) {
-    const jobs = []
-    activities.forEach((activity, index) => {
-        jobs.push(new Activity(activity[0], activity[1], weights[index]))
-    })
+    const jobs = activities
+        .map((activity, index) => new Activity(activity[0], activity[1], weights[index]))
 
     jobs.sort((a, b) => a.endTime - b.endTime)
 
