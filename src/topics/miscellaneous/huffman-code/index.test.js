@@ -46,30 +46,27 @@ test('getCharEncodingValues', () => {
     })
 })
 
-test.skip('getCharEncodingValues case 2', () => {
+test('getCharEncodingValues case 2', () => {
     const copy = (char, times) => {
         return Array.from(Array(times).keys()).reduce((acc, value) => {
             acc = acc + char
             return acc
         }, '')
     }
-    const string = `${copy('a', 44)}${copy('b', 40)}${copy('c', 11)}${copy('d', 2)}${copy('e', 2)}${copy('f', 1)}`
-    console.log(string)
+    const string = `${copy('a', 44)}${copy('b', 40)}${copy('c', 11)}${copy('d', 3)}${copy('e', 2)}${copy('f', 1)}`
     const charFreqMap = getCharFreqMap(string)
-    console.log(charFreqMap)
     const heap = getMinHeap(charFreqMap)
-    console.log(heap)
     const tree = getHuffmanTree(heap)
     const map = getCharEncodingValues(tree)
     const expectedOutput = {
         a: '1',
-        b: '01',
-        c: '001',
-        d: '0001',
-        e: '00001',
-        f: '00000'
+        b: '00',
+        c: '010',
+        d: '0111',
+        e: '01100',
+        f: '01101'
     }
-    console.log(map)
+
     map.forEach((value, key) => {
         expect(value).toEqual(expectedOutput[key])
     })
