@@ -1,3 +1,12 @@
+/*
+    DFS using stack
+
+    Time complexity: O(n)
+    space complexity: O(n)
+
+    n: total no. of nodes in graph
+*/
+
 function dfs (root, visit = (node) => console.log(node)) {
     if (!root) return
 
