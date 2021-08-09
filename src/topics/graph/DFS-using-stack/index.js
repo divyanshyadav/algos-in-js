@@ -1,16 +1,27 @@
 function dfs (root, visit = (node) => console.log(node)) {
-    let cur = root
-    const stack = []
-
-    while (cur || stack.length > 0) {
+    const stack = [{ node: root, next: 0 }]
+    while (stack.length > 0) {
+        // Do as deep as possible from current child
+        let cur = stack[stack.length - 1]
         while (cur) {
-            stack.push(cur)
-            cur = cur.left
+            if (cur.next < cur.node.children.length) {
+                stack.push({
+                    node: cur.node.children[cur.next],
+                    next: 0
+                })
+                cur.next++
+                cur = stack[stack.length - 1]
+            } else {
+                cur = null
+            }
         }
 
-        const node = stack.pop()
-        visit(node)
-        cur = node.right
+        // visit the node if no more children left to explore
+        const top = stack[stack.length - 1]
+        if (top.next === top.node.children.length) {
+            visit(top.node)
+            stack.pop()
+        }
     }
 }
 
