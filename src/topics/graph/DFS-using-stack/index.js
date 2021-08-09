@@ -19,7 +19,7 @@ function dfs (root, visit = (node) => console.log(node)) {
 
     const stack = [{ node: root, nextChildIndex: 0 }]
     while (stack.length > 0) {
-        // Go as deep as possible from current child
+        // Go as deep as possible from current node
         let cur = stack[stack.length - 1]
         while (cur) {
             if (cur.nextChildIndex < cur.node.children.length) {
