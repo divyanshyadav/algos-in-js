@@ -1,4 +1,6 @@
 function dfs (root, visit = (node) => console.log(node)) {
+    if (!root) return
+
     const stack = [{ node: root, next: 0 }]
     while (stack.length > 0) {
         // Do as deep as possible from current child
