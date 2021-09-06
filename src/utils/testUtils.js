@@ -1,16 +1,12 @@
-class Test {
-    constructor ({ args = [], expected, name = '' } = {}) {
-        this.args = args
-        this.expected = expected
-        this.name = name
-    }
+function createTest ({ args = [], expected, name = '' } = {}) {
+    return { args, expected, name }
 }
 
 /**
  *  fn: Function to be tested
- *  cases: array of Objects(Case)
+ *  cases: array of Test instance
  **/
-const run = (fn, tests) => {
+const runTestsOn = (fn, tests) => {
     tests.forEach((c, idx) => {
         const title = [`Case ${idx}`, `in: ${c.args}`, `out: ${c.expected}`]
         if (c.name) title.push(c.name)
@@ -22,6 +18,6 @@ const run = (fn, tests) => {
 }
 
 module.exports = {
-    Test,
-    run
+    createTest,
+    runTestsOn
 }
