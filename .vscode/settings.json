@@ -1,7 +1,6 @@
 {
-    "eslint.enable": true,
-    "eslint.autoFixOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.defaultFormatter": null
 }
