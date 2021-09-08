@@ -8,7 +8,7 @@ function createTest ({ args = [], expected, name = '' } = {}) {
  **/
 const runTestsOn = (fn, tests) => {
     tests.forEach((c, idx) => {
-        const title = [`Case ${idx}`, `in: ${c.args}`, `out: ${c.expected}`]
+        const title = [`Case ${idx}`, `in: ${c.args}`, `exp: ${c.expected}`]
         if (c.name) title.push(c.name)
 
         test(title.join(' | '), () => {
