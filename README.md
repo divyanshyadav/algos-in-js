@@ -5,30 +5,30 @@
 This repository contains implementation of various algorithms.
 Go through topics to find more.
 
-## Dynamic Programing
+## Dynamic Programming
 <ul>
-    <li><a href='./src/topics/dynamic-programing/01-knapsack'>01 knapsack</a></li>
-    <li><a href='./src/topics/dynamic-programing/all-construct'>All construct</a></li>
-    <li><a href='./src/topics/dynamic-programing/best-sum'>Best sum</a></li>
-    <li><a href='./src/topics/dynamic-programing/can-construct'>Can construct</a></li>
-    <li><a href='./src/topics/dynamic-programing/can-sum'>Can sum</a></li>
-    <li><a href='./src/topics/dynamic-programing/climb-staircase-ways'>Climb staircase ways</a></li>
-    <li><a href='./src/topics/dynamic-programing/coin-change-problem'>Coin change problem</a></li>
-    <li><a href='./src/topics/dynamic-programing/count-construct'>Count construct</a></li>
-    <li><a href='./src/topics/dynamic-programing/grid-traveler'>Grid traveler</a></li>
-    <li><a href='./src/topics/dynamic-programing/how-sum'>How sum</a></li>
-    <li><a href='./src/topics/dynamic-programing/increasing-triplet-subsequence'>Increasing triplet subsequence</a></li>
-    <li><a href='./src/topics/dynamic-programing/largest-sum-contiguous-subarray'>Largest sum contiguous subarray</a></li>
-    <li><a href='./src/topics/dynamic-programing/longest-common-subsequence'>Longest common subsequence</a></li>
-    <li><a href='./src/topics/dynamic-programing/longest-common-substring'>Longest common substring</a></li>
-    <li><a href='./src/topics/dynamic-programing/longest-palindromic-substring'>Longest palindromic substring</a></li>
-    <li><a href='./src/topics/dynamic-programing/matrix-chain-multiplication'>Matrix chain multiplication</a></li>
-    <li><a href='./src/topics/dynamic-programing/maximum-subarray-sum'>Maximum subarray sum</a></li>
-    <li><a href='./src/topics/dynamic-programing/min-path-sum'>Min path sum</a></li>
-    <li><a href='./src/topics/dynamic-programing/minimum-coins'>Minimum coins</a></li>
-    <li><a href='./src/topics/dynamic-programing/n-fib'>N fib</a></li>
-    <li><a href='./src/topics/dynamic-programing/sequences-given-length-every-element-equal-twice-previous'>Sequences given length every element equal twice previous</a></li>
-    <li><a href='./src/topics/dynamic-programing/weighted-job-scheduling'>Weighted job scheduling</a></li>
+    <li><a href='./src/topics/dynamic-programming/01-knapsack'>01 knapsack</a></li>
+    <li><a href='./src/topics/dynamic-programming/all-construct'>All construct</a></li>
+    <li><a href='./src/topics/dynamic-programming/best-sum'>Best sum</a></li>
+    <li><a href='./src/topics/dynamic-programming/can-construct'>Can construct</a></li>
+    <li><a href='./src/topics/dynamic-programming/can-sum'>Can sum</a></li>
+    <li><a href='./src/topics/dynamic-programming/climb-staircase-ways'>Climb staircase ways</a></li>
+    <li><a href='./src/topics/dynamic-programming/coin-change-problem'>Coin change problem</a></li>
+    <li><a href='./src/topics/dynamic-programming/count-construct'>Count construct</a></li>
+    <li><a href='./src/topics/dynamic-programming/grid-traveler'>Grid traveler</a></li>
+    <li><a href='./src/topics/dynamic-programming/how-sum'>How sum</a></li>
+    <li><a href='./src/topics/dynamic-programming/increasing-triplet-subsequence'>Increasing triplet subsequence</a></li>
+    <li><a href='./src/topics/dynamic-programming/largest-sum-contiguous-subarray'>Largest sum contiguous subarray</a></li>
+    <li><a href='./src/topics/dynamic-programming/longest-common-subsequence'>Longest common subsequence</a></li>
+    <li><a href='./src/topics/dynamic-programming/longest-common-substring'>Longest common substring</a></li>
+    <li><a href='./src/topics/dynamic-programming/longest-palindromic-substring'>Longest palindromic substring</a></li>
+    <li><a href='./src/topics/dynamic-programming/matrix-chain-multiplication'>Matrix chain multiplication</a></li>
+    <li><a href='./src/topics/dynamic-programming/maximum-subarray-sum'>Maximum subarray sum</a></li>
+    <li><a href='./src/topics/dynamic-programming/min-path-sum'>Min path sum</a></li>
+    <li><a href='./src/topics/dynamic-programming/minimum-coins'>Minimum coins</a></li>
+    <li><a href='./src/topics/dynamic-programming/n-fib'>N fib</a></li>
+    <li><a href='./src/topics/dynamic-programming/sequences-given-length-every-element-equal-twice-previous'>Sequences given length every element equal twice previous</a></li>
+    <li><a href='./src/topics/dynamic-programming/weighted-job-scheduling'>Weighted job scheduling</a></li>
   </ul>
 
 ## Graph
