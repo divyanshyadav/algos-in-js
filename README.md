@@ -113,6 +113,7 @@ Go through topics to find more.
     <li><a href='./src/topics/recursion-and-backtracking/add-one'>Add one</a></li>
     <li><a href='./src/topics/recursion-and-backtracking/count-subsets-sum'>Count subsets sum</a></li>
     <li><a href='./src/topics/recursion-and-backtracking/decode-string'>Decode string</a></li>
+    <li><a href='./src/topics/recursion-and-backtracking/deep-merge'>Deep merge</a></li>
     <li><a href='./src/topics/recursion-and-backtracking/flatten-object'>Flatten object</a></li>
     <li><a href='./src/topics/recursion-and-backtracking/maze-generator'>Maze generator</a></li>
     <li><a href='./src/topics/recursion-and-backtracking/nth-index-in-fibonacci-series'>Nth index in fibonacci series</a></li>
