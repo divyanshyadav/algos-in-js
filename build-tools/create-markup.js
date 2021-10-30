@@ -31,7 +31,7 @@ function createList (dirMap, dir, depth) {
                 list.push(`${addTabs(depth + 1)}<li><a href='${filePath}'>${name}</a></li>`)
             } else {
                 if (depth === 0) {
-                    list.push(`\n## ${name}`)
+                    list.push(`\n## ${createHeading(key)}`)
                 } else {
                     list.push(`${addTabs(depth + 1)}<li>${name}</li>`)
                 }
@@ -54,11 +54,20 @@ function addTabs (count) {
 }
 
 function getName (fileName) {
+    return fileName.split('-').reduce((acc, value, idx) => {
+        if (idx === 0) {
+            return [...acc, capitalize(value)]
+        }
+
+        return [...acc, value]
+    }, []).join(' ')
+}
+
+function createHeading (fileName) {
     return fileName.split('-').map(capitalize).join(' ')
 }
 
-function capitalize (string, index) {
-    if (string.length === 1 && index > 0) { return string }
+function capitalize (string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
