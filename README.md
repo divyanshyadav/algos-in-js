@@ -67,8 +67,8 @@ Go through topics to find more.
 <ul>
     <li>Activity Selection</li>
 <ul>
-      <li><a href='./src/topics/greedy/activity-selection/maxCount'>MaxCount</a></li>
-      <li><a href='./src/topics/greedy/activity-selection/maxSet'>MaxSet</a></li>
+      <li><a href='./src/topics/greedy/activity-selection/max-count'>Max Count</a></li>
+      <li><a href='./src/topics/greedy/activity-selection/max-set'>Max Set</a></li>
     </ul>
     <li><a href='./src/topics/greedy/fractional-knapsack'>Fractional Knapsack</a></li>
     <li><a href='./src/topics/greedy/room-scheduling'>Room Scheduling</a></li>
