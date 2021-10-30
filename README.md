@@ -120,12 +120,12 @@ Go through topics to find more.
 
 ## Searching
 <ul>
+    <li><a href='./src/topics/searching/anagram-substring-search'>Anagram Substring Search</a></li>
     <li><a href='./src/topics/searching/count-occurrences-of-data-in-sorted-array'>Count Occurrences Of Data In Sorted Array</a></li>
     <li><a href='./src/topics/searching/find-2nd-smallest-element'>Find 2nd Smallest Element</a></li>
     <li><a href='./src/topics/searching/find-a-missing-number-in-ap'>Find A Missing Number In Ap</a></li>
     <li><a href='./src/topics/searching/ice-cream-parlor'>Ice Cream Parlor</a></li>
     <li><a href='./src/topics/searching/search-in-rotated-sorted-array'>Search In Rotated Sorted Array</a></li>
-    <li><a href='./src/topics/searching/search-word-with-unique-characters'>Search Word With Unique Characters</a></li>
     <li><a href='./src/topics/searching/square-root'>Square Root</a></li>
   </ul>
   <li><a href='./src/topics/selection'>Selection</a></li>
