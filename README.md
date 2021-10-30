@@ -6,7 +6,6 @@ This repository contains implementation of various algorithms.
 Go through topics to find more.
 
 ## Dynamic Programing
-
 <ul>
     <li><a href='./src/topics/dynamic-programing/01-knapsack'>01 Knapsack</a></li>
     <li><a href='./src/topics/dynamic-programing/all-construct'>All Construct</a></li>
@@ -20,10 +19,10 @@ Go through topics to find more.
     <li><a href='./src/topics/dynamic-programing/how-sum'>How Sum</a></li>
     <li><a href='./src/topics/dynamic-programing/increasing-triplet-subsequence'>Increasing Triplet Subsequence</a></li>
     <li><a href='./src/topics/dynamic-programing/largest-sum-contiguous-subarray'>Largest Sum Contiguous Subarray</a></li>
-    <li><a href='./src/topics/dynamic-programing/longest-common-subsequence'>Longest Common Subsequence</a></li>       
+    <li><a href='./src/topics/dynamic-programing/longest-common-subsequence'>Longest Common Subsequence</a></li>
     <li><a href='./src/topics/dynamic-programing/longest-common-substring'>Longest Common Substring</a></li>
-    <li><a href='./src/topics/dynamic-programing/longest-palindromic-substring'>Longest Palindromic Substring</a></li> 
-    <li><a href='./src/topics/dynamic-programing/matrix-chain-multiplication'>Matrix Chain Multiplication</a></li>     
+    <li><a href='./src/topics/dynamic-programing/longest-palindromic-substring'>Longest Palindromic Substring</a></li>
+    <li><a href='./src/topics/dynamic-programing/matrix-chain-multiplication'>Matrix Chain Multiplication</a></li>
     <li><a href='./src/topics/dynamic-programing/maximum-subarray-sum'>Maximum Subarray Sum</a></li>
     <li><a href='./src/topics/dynamic-programing/min-path-sum'>Min Path Sum</a></li>
     <li><a href='./src/topics/dynamic-programing/minimum-coins'>Minimum Coins</a></li>
@@ -33,7 +32,6 @@ Go through topics to find more.
   </ul>
 
 ## Graph
-
 <ul>
     <li>Both</li>
 <ul>
@@ -66,7 +64,6 @@ Go through topics to find more.
   </ul>
 
 ## Greedy
-
 <ul>
     <li>Activity Selection</li>
 <ul>
@@ -78,13 +75,11 @@ Go through topics to find more.
   </ul>
 
 ## Hash Table
-
 <ul>
     <li><a href='./src/topics/hash-table/make-two-string-anagram'>Make Two String Anagram</a></li>
   </ul>
 
 ## Heap
-
 <ul>
     <li><a href='./src/topics/heap/create-stack-using-heap'>Create Stack Using Heap</a></li>
     <li><a href='./src/topics/heap/find-the-running-median'>Find The Running Median</a></li>
@@ -92,7 +87,6 @@ Go through topics to find more.
   </ul>
 
 ## Linked List
-
 <ul>
     <li><a href='./src/topics/linked-list/detect-cycle'>Detect Cycle</a></li>
     <li><a href='./src/topics/linked-list/remove-duplicats'>Remove Duplicats</a></li>
@@ -100,7 +94,6 @@ Go through topics to find more.
   </ul>
 
 ## Math
-
 <ul>
     <li><a href='./src/topics/math/combinations'>Combinations</a></li>
     <li><a href='./src/topics/math/find-factors'>Find Factors</a></li>
@@ -111,13 +104,11 @@ Go through topics to find more.
   </ul>
 
 ## Miscellaneous
-
 <ul>
     <li><a href='./src/topics/miscellaneous/huffman-code'>Huffman Code</a></li>
   </ul>
 
 ## Recursion And Backtracking
-
 <ul>
     <li><a href='./src/topics/recursion-and-backtracking/add-one'>Add One</a></li>
     <li><a href='./src/topics/recursion-and-backtracking/count-subsets-sum'>Count Subsets Sum</a></li>
@@ -128,20 +119,18 @@ Go through topics to find more.
   </ul>
 
 ## Searching
-
 <ul>
-    <li><a href='./src/topics/searching/count-occurrences-of-data-in-sorted-array'>Count Occurrences Of Data In Sorted 
-Array</a></li>
+    <li><a href='./src/topics/searching/count-occurrences-of-data-in-sorted-array'>Count Occurrences Of Data In Sorted Array</a></li>
     <li><a href='./src/topics/searching/find-2nd-smallest-element'>Find 2nd Smallest Element</a></li>
     <li><a href='./src/topics/searching/find-a-missing-number-in-ap'>Find A Missing Number In Ap</a></li>
     <li><a href='./src/topics/searching/ice-cream-parlor'>Ice Cream Parlor</a></li>
-    <li><a href='./src/topics/searching/search-in-rotated-sorted-array'>Search In Rotated Sorted Array</a></li>        
-    <li><a href='./src/topics/searching/search-word-with-unique-characters'>Search Word With Unique Characters</a></li>    <li><a href='./src/topics/searching/square-root'>Square Root</a></li>
+    <li><a href='./src/topics/searching/search-in-rotated-sorted-array'>Search In Rotated Sorted Array</a></li>
+    <li><a href='./src/topics/searching/search-word-with-unique-characters'>Search Word With Unique Characters</a></li>
+    <li><a href='./src/topics/searching/square-root'>Square Root</a></li>
   </ul>
   <li><a href='./src/topics/selection'>Selection</a></li>
 
 ## Sorting
-
 <ul>
     <li><a href='./src/topics/sorting/3-way-quick-sort'>3 Way Quick Sort</a></li>
     <li><a href='./src/topics/sorting/heap-sort'>Heap Sort</a></li>
@@ -153,7 +142,6 @@ Array</a></li>
   </ul>
 
 ## Stack
-
 <ul>
     <li><a href='./src/topics/stack/balanced-parentheses'>Balanced Parentheses</a></li>
     <li><a href='./src/topics/stack/queue-with-two-stacks'>Queue With Two Stacks</a></li>
@@ -162,7 +150,6 @@ Array</a></li>
   <li><a href='./src/topics/strings'>Strings</a></li>
 
 ## Tree
-
 <ul>
     <li><a href='./src/topics/tree/check-if-bst'>Check If Bst</a></li>
     <li><a href='./src/topics/tree/construct-binary-tree-from-post-and-in-order'>Construct Binary Tree From Post And In Order</a></li>
@@ -170,7 +157,7 @@ Array</a></li>
     <li><a href='./src/topics/tree/find-inorder-successor-in-BST'>Find Inorder Successor In BST</a></li>
     <li><a href='./src/topics/tree/find-lowest-common-ancestor'>Find Lowest Common Ancestor</a></li>
     <li><a href='./src/topics/tree/in-order-traversal-using-constant-space'>In Order Traversal Using Constant Space</a></li>
-    <li><a href='./src/topics/tree/iterative-in-order-traversal-a-tree'>Iterative In Order Traversal A Tree</a></li>   
+    <li><a href='./src/topics/tree/iterative-in-order-traversal-a-tree'>Iterative In Order Traversal A Tree</a></li>
     <li><a href='./src/topics/tree/second-largest-node'>Second Largest Node</a></li>
     <li><a href='./src/topics/tree/serialize-and-deserialize-a-tree'>Serialize And Deserialize A Tree</a></li>
   </ul>
