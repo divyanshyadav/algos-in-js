@@ -1,7 +1,8 @@
-// n = nums.length, m = targetSum
-// time: O(n*m * m)
-// space: O(m*m)
-
+/*
+    n = nums.length, m = targetSum
+    time: O(n*m * m)
+    space: O(m*m)
+*/
 function bestSum (targetSum, nums, memo = {}) {
     if (targetSum in memo) return memo[targetSum]
     if (targetSum === 0) return []
@@ -23,4 +24,33 @@ function bestSum (targetSum, nums, memo = {}) {
     return shortestCombination
 }
 
-module.exports = bestSum
+/*
+    n = nums.length, m = targetSum
+    time: O(m*n * m)
+    space: O(m*m)
+*/
+function bestSumTabulation (targetSum, nums) {
+    const table = new Array(targetSum + 1).fill(null)
+    table[0] = []
+
+    for (let i = 1; i <= targetSum; i++) {
+        let shortestCombination = null
+        for (const num of nums) {
+            const index = i - num
+            if (index >= 0 && table[index] !== null) {
+                const combination = [num, ...table[index]]
+                if (shortestCombination === null || shortestCombination.length > combination.length) {
+                    shortestCombination = combination
+                }
+            }
+        }
+        table[i] = shortestCombination
+    }
+
+    return table[targetSum]
+}
+
+module.exports = {
+    bestSum,
+    bestSumTabulation
+}
