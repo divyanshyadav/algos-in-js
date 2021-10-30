@@ -57,7 +57,8 @@ function getName (fileName) {
     return fileName.split('-').map(capitalize).join(' ')
 }
 
-function capitalize (string) {
+function capitalize (string, index) {
+    if (string.length === 1 && index > 0) { return string }
     return string.charAt(0).toUpperCase() + string.slice(1)
 }
 

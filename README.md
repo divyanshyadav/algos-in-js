@@ -123,7 +123,7 @@ Go through topics to find more.
     <li><a href='./src/topics/searching/anagram-substring-search'>Anagram Substring Search</a></li>
     <li><a href='./src/topics/searching/count-occurrences-of-data-in-sorted-array'>Count Occurrences Of Data In Sorted Array</a></li>
     <li><a href='./src/topics/searching/find-2nd-smallest-element'>Find 2nd Smallest Element</a></li>
-    <li><a href='./src/topics/searching/find-a-missing-number-in-ap'>Find A Missing Number In Ap</a></li>
+    <li><a href='./src/topics/searching/find-a-missing-number-in-ap'>Find a Missing Number In Ap</a></li>
     <li><a href='./src/topics/searching/ice-cream-parlor'>Ice Cream Parlor</a></li>
     <li><a href='./src/topics/searching/search-in-rotated-sorted-array'>Search In Rotated Sorted Array</a></li>
     <li><a href='./src/topics/searching/square-root'>Square Root</a></li>
@@ -157,9 +157,9 @@ Go through topics to find more.
     <li><a href='./src/topics/tree/find-inorder-successor-in-BST'>Find Inorder Successor In BST</a></li>
     <li><a href='./src/topics/tree/find-lowest-common-ancestor'>Find Lowest Common Ancestor</a></li>
     <li><a href='./src/topics/tree/in-order-traversal-using-constant-space'>In Order Traversal Using Constant Space</a></li>
-    <li><a href='./src/topics/tree/iterative-in-order-traversal-a-tree'>Iterative In Order Traversal A Tree</a></li>
+    <li><a href='./src/topics/tree/iterative-in-order-traversal-a-tree'>Iterative In Order Traversal a Tree</a></li>
     <li><a href='./src/topics/tree/second-largest-node'>Second Largest Node</a></li>
-    <li><a href='./src/topics/tree/serialize-and-deserialize-a-tree'>Serialize And Deserialize A Tree</a></li>
+    <li><a href='./src/topics/tree/serialize-and-deserialize-a-tree'>Serialize And Deserialize a Tree</a></li>
   </ul>
 
 ## Input size(n) vs time
