@@ -20,6 +20,3 @@ ejs.renderFile(readmeTemplatePath, {
 function saveReadme (content) {
     fs.writeFileSync(readmePath, content)
 }
-
-const programming = 1
-console.log(programming)
