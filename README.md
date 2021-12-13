@@ -97,6 +97,7 @@ Go through topics to find more.
 <ul>
     <li><a href='./src/topics/math/combinations'>Combinations</a></li>
     <li><a href='./src/topics/math/find-factors'>Find factors</a></li>
+    <li><a href='./src/topics/math/find-rabbit'>Find rabbit</a></li>
     <li><a href='./src/topics/math/gcf'>Gcf</a></li>
     <li><a href='./src/topics/math/multiplication'>Multiplication</a></li>
     <li><a href='./src/topics/math/permutations'>Permutations</a></li>
