@@ -1,3 +1,7 @@
+/**
+    Time complexity: O(2^size)
+    Space complexity: O(size)
+*/
 function findRabbit (size, rabbitIndex) {
     function find (rabbitIndex, index) {
         if (index >= size) {
