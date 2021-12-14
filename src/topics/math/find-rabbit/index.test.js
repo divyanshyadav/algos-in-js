@@ -1,8 +1,10 @@
-const findRabbit = require('.')
+const findRabbitSol1 = require('./solution-1')
+const findRabbitSol2 = require('./solution-2')
+const { createTest, runTestsOn } = require('../../../utils/testUtils')
 
-test('case 1', () => {
-    const rabbitIndex = 3
-    const size = 4
+const tests = [
+    createTest({ args: [4, 3], expected: 2 })
+]
 
-    expect(findRabbit(size, rabbitIndex)).toBe(2)
-})
+runTestsOn(findRabbitSol1, tests)
+runTestsOn(findRabbitSol2, tests)
