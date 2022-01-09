@@ -128,9 +128,9 @@ Go through topics to find more.
     <li><a href='./src/topics/searching/find-a-missing-number-in-ap'>Find a missing number in ap</a></li>
     <li><a href='./src/topics/searching/ice-cream-parlor'>Ice cream parlor</a></li>
     <li><a href='./src/topics/searching/search-in-rotated-sorted-array'>Search in rotated sorted array</a></li>
+    <li><a href='./src/topics/searching/selection'>Selection</a></li>
     <li><a href='./src/topics/searching/square-root'>Square root</a></li>
   </ul>
-  <li><a href='./src/topics/selection'>Selection</a></li>
 
 ## Sorting
 <ul>
