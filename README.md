@@ -135,12 +135,10 @@ Go through topics to find more.
 ## Sorting
 <ul>
     <li><a href='./src/topics/sorting/3-way-quick-sort'>3 way quick sort</a></li>
+    <li><a href='./src/topics/sorting/fuzzy-sort'>Fuzzy sort</a></li>
     <li><a href='./src/topics/sorting/heap-sort'>Heap sort</a></li>
     <li><a href='./src/topics/sorting/insertion-sort'>Insertion sort</a></li>
-    <li>Quick sort</li>
-<ul>
-      <li><a href='./src/topics/sorting/quick-sort/fuzzy-sort'>Fuzzy sort</a></li>
-    </ul>
+    <li><a href='./src/topics/sorting/quick-sort'>Quick sort</a></li>
   </ul>
 
 ## Stack
