@@ -151,6 +151,7 @@ Go through topics to find more.
 
 ## Tree
 <ul>
+    <li><a href='./src/topics/tree/1d-search'>1d search</a></li>
     <li><a href='./src/topics/tree/binary-tree-right-side-view'>Binary tree right side view</a></li>
     <li><a href='./src/topics/tree/check-if-bst'>Check if bst</a></li>
     <li><a href='./src/topics/tree/construct-binary-tree-from-post-and-in-order'>Construct binary tree from post and in order</a></li>
