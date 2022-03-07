@@ -1,5 +1,5 @@
-const { partition } = require('../sorting/quick-sort')
-const shuffle = require('../math/shuffle')
+const { partition } = require('../../sorting/quick-sort')
+const shuffle = require('../../math/shuffle')
 
 const select = (array, index) => {
     array = array.map(v => v)

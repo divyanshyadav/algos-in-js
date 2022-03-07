@@ -2,7 +2,7 @@
     Reference: https://alumni.media.mit.edu/~dlanman/courses/cs157/HW3.pdf
 */
 
-const { swap } = require('../../../../utils')
+const { swap } = require('../../../utils')
 
 function findIntersection (intervals, start, end) {
     let [a, b] = intervals[end]
