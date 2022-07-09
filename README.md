@@ -123,6 +123,7 @@ Go through topics to find more.
 ## Searching
 <ul>
     <li><a href='./src/topics/searching/anagram-substring-search'>Anagram substring search</a></li>
+    <li><a href='./src/topics/searching/binary-search'>Binary search</a></li>
     <li><a href='./src/topics/searching/count-occurrences-of-data-in-sorted-array'>Count occurrences of data in sorted array</a></li>
     <li><a href='./src/topics/searching/find-2nd-smallest-element'>Find 2nd smallest element</a></li>
     <li><a href='./src/topics/searching/find-a-missing-number-in-ap'>Find a missing number in ap</a></li>
@@ -130,6 +131,7 @@ Go through topics to find more.
     <li><a href='./src/topics/searching/search-in-rotated-sorted-array'>Search in rotated sorted array</a></li>
     <li><a href='./src/topics/searching/selection'>Selection</a></li>
     <li><a href='./src/topics/searching/square-root'>Square root</a></li>
+    <li><a href='./src/topics/searching/ternary-search'>Ternary search</a></li>
   </ul>
 
 ## Sorting
