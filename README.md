@@ -146,6 +146,7 @@ Go through topics to find more.
 ## Stack
 <ul>
     <li><a href='./src/topics/stack/balanced-parentheses'>Balanced parentheses</a></li>
+    <li><a href='./src/topics/stack/calculator'>Calculator</a></li>
     <li><a href='./src/topics/stack/queue-with-two-stacks'>Queue with two stacks</a></li>
     <li><a href='./src/topics/stack/stocks-span'>Stocks span</a></li>
   </ul>
