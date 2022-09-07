@@ -55,13 +55,4 @@ function getPointsFromLines(lines) {
     }, [])
 }
 
-// const lines = [
-//     [0, 1, 5, 1],
-//     [2, 3, 6, 3],
-//     [4, 4, 4, 2],
-//     [3, 2, 3, 3]
-// ]
-
-// sweepLine(lines)
-
 module.exports = sweepLine
