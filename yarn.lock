@@ -1762,10 +1762,10 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-data-structures-again@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/data-structures-again/-/data-structures-again-2.1.10.tgz#cf15cc9dd6cc0e476d8ddb2cb7f574ca5133b882"
-  integrity sha512-Pp24HLABhUN4RFhXpQIhMUA5knrq9EPo4N5MDiZdZ2CKwj/1WgDMVPObzJaARhxa6cpB2kQq6o9hhFzlVFzWbg==
+data-structures-again@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/data-structures-again/-/data-structures-again-2.5.0.tgz#aac05c4e1844389a57482645355b6017f0f2d225"
+  integrity sha512-GUxiPvnqzHow/4ROZF7b2eDbuzw/uzmpnfy808ypY9kXLv5wWGt0FRMtuUyAfXU3UTB35Aa1yAuxntfuiMxwpg==
 
 data-urls@^2.0.0:
   version "2.0.0"

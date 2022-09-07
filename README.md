@@ -163,6 +163,7 @@ Go through topics to find more.
     <li><a href='./src/topics/tree/find-lowest-common-ancestor'>Find lowest common ancestor</a></li>
     <li><a href='./src/topics/tree/in-order-traversal-using-constant-space'>In order traversal using constant space</a></li>
     <li><a href='./src/topics/tree/iterative-in-order-traversal-a-tree'>Iterative in order traversal a tree</a></li>
+    <li><a href='./src/topics/tree/orthogonal-line-segment-intersection-search'>Orthogonal line segment intersection search</a></li>
     <li><a href='./src/topics/tree/second-largest-node'>Second largest node</a></li>
     <li><a href='./src/topics/tree/serialize-and-deserialize-a-tree'>Serialize and deserialize a tree</a></li>
   </ul>
