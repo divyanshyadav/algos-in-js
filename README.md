@@ -76,6 +76,7 @@ Go through topics to find more.
 
 ## Hash Table
 <ul>
+    <li><a href='./src/topics/hash-table/4-sum'>4 sum</a></li>
     <li><a href='./src/topics/hash-table/make-two-string-anagram'>Make two string anagram</a></li>
   </ul>
 
