@@ -56,6 +56,7 @@ Go through topics to find more.
       <li><a href='./src/topics/graph/undirected/diameter'>Diameter</a></li>
       <li><a href='./src/topics/graph/undirected/is-2-edge-graph'>Is 2 edge graph</a></li>
       <li><a href='./src/topics/graph/undirected/is-2-vertex-graph'>Is 2 vertex graph</a></li>
+      <li><a href='./src/topics/graph/undirected/is-biparted'>Is biparted</a></li>
       <li>MST</li>
 <ul>
         <li><a href='./src/topics/graph/undirected/MST/kruskal'>Kruskal</a></li>
