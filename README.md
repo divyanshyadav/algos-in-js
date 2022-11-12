@@ -37,7 +37,6 @@ Go through topics to find more.
 <ul>
       <li><a href='./src/topics/graph/both/breath-first-search'>Breath first search</a></li>
       <li><a href='./src/topics/graph/both/find-connected-components'>Find connected components</a></li>
-      <li><a href='./src/topics/graph/both/is-bipartite'>Is bipartite</a></li>
       <li>Single source shortest path</li>
 <ul>
         <li><a href='./src/topics/graph/both/single-source-shortest-path/dijkstras'>Dijkstras</a></li>
@@ -56,7 +55,7 @@ Go through topics to find more.
       <li><a href='./src/topics/graph/undirected/diameter'>Diameter</a></li>
       <li><a href='./src/topics/graph/undirected/is-2-edge-graph'>Is 2 edge graph</a></li>
       <li><a href='./src/topics/graph/undirected/is-2-vertex-graph'>Is 2 vertex graph</a></li>
-      <li><a href='./src/topics/graph/undirected/is-biparted'>Is biparted</a></li>
+      <li><a href='./src/topics/graph/undirected/is-bipartite'>Is bipartite</a></li>
       <li>MST</li>
 <ul>
         <li><a href='./src/topics/graph/undirected/MST/kruskal'>Kruskal</a></li>
