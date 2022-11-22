@@ -1,34 +1,40 @@
-function isACyclic (graph, start) {
-    const startVertex = graph.getVertex(start)
+// const { Graph } = require('data-structures-again')
 
-    const helper = (vertex) => {
-        vertex.visited = true
-        vertex.inRecStack = true
+/**
+ * @param {Graph} graph
+ * @returns {Boolean}
+ */
+function isACyclic(graph) {
+    const visited = new Set()
+    const inRecStack = new Set()
 
-        const adjVertices = vertex.getAdjVertices()
-        let flag = true
+    const hasCycle = vertex => {
+        visited.add(vertex)
+        inRecStack.add(vertex)
 
-        for (let i = 0; i < adjVertices.length; i++) {
-            const neighbor = graph.getVertex(adjVertices[i].name)
-
-            if (!neighbor.visited) {
-                flag = helper(neighbor)
-            } else {
-                if (neighbor.inRecStack) {
-                    flag = false
+        for (const neighbor of graph.adjTo(vertex)) {
+            if (!visited.has(neighbor)) {
+                if (hasCycle(neighbor)) {
+                    return true
                 }
-            }
-
-            if (flag === false) {
-                break
+            } else if (inRecStack.has(neighbor)) {
+                return true
             }
         }
 
-        vertex.inRecStack = false
-        return flag
+        inRecStack.delete(vertex)
+        return false
     }
 
-    return helper(startVertex)
+    for (const vertex of graph.getVertices()) {
+        if (!visited.has(vertex)) {
+            if (hasCycle(vertex)) {
+                return false
+            }
+        }
+    }
+
+    return true
 }
 
 module.exports = isACyclic
