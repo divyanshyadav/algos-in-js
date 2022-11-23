@@ -8,16 +8,16 @@ const isACyclic = require('../isAcyclic')
 function getTopologicalSortOrder(graph) {
     if (!isACyclic(graph)) return []
 
-    const stack = []
+    const postOrder = []
     const visited = new Set()
 
     for (const vertex of graph.getVertices()) {
         if (!visited.has(vertex)) {
-            dfs(graph, vertex, visited, vertex => stack.push(vertex))
+            dfs(graph, vertex, visited, vertex => postOrder.push(vertex))
         }
     }
 
-    return stack
+    return postOrder.reverse()
 }
 
 /**
