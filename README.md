@@ -46,7 +46,7 @@ Go through topics to find more.
     <li><a href='./src/topics/graph/DFS-using-stack'>DFS using stack</a></li>
     <li>Directed</li>
 <ul>
-      <li><a href='./src/topics/graph/directed/is-strongly-connected'>Is strongly connected</a></li>
+      <li><a href='./src/topics/graph/directed/find-strong-components'>Find strong components</a></li>
       <li><a href='./src/topics/graph/directed/isAcyclic'>IsAcyclic</a></li>
       <li><a href='./src/topics/graph/directed/topological-sort'>Topological sort</a></li>
     </ul>
