@@ -1,5 +1,6 @@
 const { Graph } = require('data-structures-again')
 const getStronglyConnectedComponents = require('.')
+const testCase2InputFile = require('./test-case-2')
 
 test('case 1', () => {
     // check graph1.jpg
@@ -35,4 +36,17 @@ test('case 1', () => {
         [6, 8],
         [7]
     ])
+})
+
+test('case 2', () => {
+    const graph = new Graph()
+
+    testCase2InputFile
+        .split('\n')
+        .filter(v => v)
+        .map(v => v.trim())
+        .map(v => v.split(/[\s]+/))
+        .forEach(([v, w]) => graph.addEdge(v, w))
+
+    expect(getStronglyConnectedComponents(graph).length).toEqual(10)
 })
