@@ -5,7 +5,7 @@ const { Graph } = require('data-structures-again')
  * @returns {String[][] | Number[][]} strongly connected components
  */
 function getStronglyConnectedComponents(graph) {
-    const revGraph = reverse(graph)
+    const revGraph = graph.reverse()
     const revPostOrder = getReversePostOrder(revGraph)
 
     const visited = new Set()
@@ -59,22 +59,6 @@ function getReversePostOrder(graph) {
     }
 
     return postOrder.reverse()
-}
-
-/**
- * @param {Graph} graph
- * @return {Graph} reversed graph(edges direction reversed)
- */
-function reverse(graph) {
-    const revGraph = new Graph()
-
-    for (const vertex of graph.getVertices()) {
-        graph.adjTo(vertex).forEach(v => {
-            revGraph.addEdge(v, vertex)
-        })
-    }
-
-    return revGraph
 }
 
 module.exports = getStronglyConnectedComponents

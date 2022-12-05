@@ -48,6 +48,7 @@ Go through topics to find more.
 <ul>
       <li><a href='./src/topics/graph/directed/find-strong-components'>Find strong components</a></li>
       <li><a href='./src/topics/graph/directed/isAcyclic'>IsAcyclic</a></li>
+      <li><a href='./src/topics/graph/directed/shortest-directed-cycle'>Shortest directed cycle</a></li>
       <li><a href='./src/topics/graph/directed/topological-sort'>Topological sort</a></li>
     </ul>
     <li>Undirected</li>
